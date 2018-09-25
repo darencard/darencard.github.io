@@ -1,8 +1,8 @@
 ---
-title: News and Blog
+title: Blog Posts
 layout: collection
-permalink: /posts/
-collection: posts
+permalink: /blog/
+collection: blog
 entries_layout: list
 sort_by: date
 sort_order: reverse

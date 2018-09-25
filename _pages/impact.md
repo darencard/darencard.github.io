@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /stats/
+permalink: /impact/
 title: Stats
 ---
 ![Cumulative Participants](https://github.com/UF-Carpentry/Coordination/raw/master/graphs/cumulative_part.png)

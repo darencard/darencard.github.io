@@ -4,12 +4,12 @@ main:
     url: /about/
   - title: "Events"
     url: /events/
-  - title: "Stats"
-    url: /stats/
-  - title: "Governance"
-    url: /governance/
-  - title: "Minutes"
-    url: /minutes/
+  - title: "Impact"
+    url: /impact/
+  - title: "Members"
+    url: /members/
+ # - title: "Minutes"
+ #   url: /minutes/
   - title: "Contact"
     url: /contact/
   # - title: "Sample Collections"

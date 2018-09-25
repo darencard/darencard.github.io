@@ -10,10 +10,9 @@ interested in developing teaching and collaboration skills.
 
 ## Benefits of becoming an instructor
 
-* Teaching experiance
+* Teaching experience
 * Formal training in evidence-based and inclusive teaching practices
 * Collaborative project experiance
-* Eligibility for travel support
 
 ## Connections beyond UTA
 

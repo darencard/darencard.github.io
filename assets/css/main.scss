@@ -6,6 +6,6 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 
-$text-color: red;
+$masthead-link-color: red;
 
 @import "minimal-mistakes"; // main partials

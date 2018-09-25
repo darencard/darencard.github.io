@@ -7,7 +7,7 @@ toc_sticky: true
 ---
 ## Group Founders
 
-* [Daren Card](www.darencard.net)
+* [Daren Card](https://www.darencard.net)
 * Anna Williford
 
 <!--[Previous board members]({{ site.baseurl }}/prior_board/)-->
@@ -15,7 +15,7 @@ toc_sticky: true
 ## Current Instructors
 
 * Richard Adams
-* [Daren Card](www.darencard.net)
+* [Daren Card](https://www.darencard.net)
 * Joe Cloud
 * Peace Ossom-Williamson
 * Adnan Qureshi

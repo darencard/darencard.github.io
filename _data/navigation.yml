@@ -10,6 +10,8 @@ main:
     url: /members/
  # - title: "Minutes"
  #   url: /minutes/
+  - title: "Blog"
+    url: /blog/
   - title: "Contact"
     url: /contact/
   # - title: "Sample Collections"

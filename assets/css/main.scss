@@ -7,5 +7,6 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 
 $masthead-link-color: #071159;
+$link-color: #394EEF;
 
 @import "minimal-mistakes"; // main partials

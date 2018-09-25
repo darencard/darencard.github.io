@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "UTA Carpentries Group Formation"
-date: 2018-07-03
+date: 2018-09-25
 excerpt: "Changes in group organization as UTA joins The Carpentries"
 ---
 

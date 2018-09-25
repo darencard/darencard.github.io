@@ -4,7 +4,7 @@ permalink: /contact/
 title: Contact Info
 classes: wide
 ---
-Contact our organization at [uta.carpentries](mailto://uta.carpentries@gmail.com)
+Contact our organization at [uta.carpentries@gmail.com](mailto://uta.carpentries@gmail.com)
 
 Follow us on [Twitter](https://twitter.com/UTAcarpentries) for announcements and live-tweets of events.
 

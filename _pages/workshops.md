@@ -26,6 +26,6 @@ also monitor our site here or join our [email list](https://groups.google.com/fo
 
 ## Venue
 
-The [UTA Library](https://informatics.institute.ufl.edu/) generously supports
+The [UTA Library](https://library.uta.edu/) generously supports
 our workshops by providing financial and logistical support and by allowing 
 us to use their 6th floor events area.

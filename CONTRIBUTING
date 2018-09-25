@@ -1,0 +1,23 @@
+# Contributing
+
+## Events
+
+Events are things that people can attend. They will have a time and location and
+a planned schedule. A workshop, meet-up, rez-baz are events. Things like 
+elections and calls for proposals are not events and should be under news only.
+
+To add a new event:
+
+1. Create a new file in the `/_events` directory. Use the date as the first part
+of the file name and the rest should be the lower-cased "slug" if it is a
+Carpentries workshop or some other meaningfull abbreviation if it is something
+else.
+1. The file should contain YAML front matter. See an existing file for the 
+variables to set. 
+1. The remainder of the file can be empty if the `website` variable is set to an
+outside site or it can be a description of the event if there is no outside 
+site.
+1. If the `website` points to the event page on this site, it should be of the
+form `/events/<file name with no extenstion>/`
+1. The start data controlls order on the page. The end date controls "upcoming"
+or not.

@@ -1,0 +1,52 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+
+{% comment %}
+This template is only run when the site is rebuilt so the "upcoming" isn't 
+going to change in real time. Let's try this anyway and see what's needed to
+tickle this update. It will at least be a little more automated than just having
+it be a static list.
+{% endcomment %}
+
+{% assign current_date = site.time | date: "%Y%m%d" %}
+  <section id="{{ year.name }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">Upcoming Events</h2>
+    <div class="entries-{{ page.entries_layout | default: 'list' }}">
+{% for event in site.events %}
+{% assign event_date = event.end | date: "%Y%m%d" %}
+{% if event_date >= current_date %}
+      <a href="{{ event.website }}">{{ event.start | date: "%b %-d" }} - {{ event.end | date: "%b %-d" }}: {{ event.title }}</a> <br />
+        {{ event.location }} <br />
+        <small>{{ event.topics }}</small>
+        {% include archive-single.html type=page.entries_layout %}
+
+{% endif %}
+{% endfor %}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+
+
+
+{% assign eventsByYear = site.events | group_by_exp: 'event', 'event.start | date: "%Y"' %}
+{% for year in eventsByYear reversed %}
+  <section id="{{ year.name }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ year.name }}</h2>
+    <div class="entries-{{ page.entries_layout | default: 'list' }}">
+      {% for event in year.items reversed %}
+      {% assign event_date = event.end | date: "%Y%m%d" %}
+      {% if event_date < current_date %}
+<a href="{{ event.website }}">{{ event.start | date: "%b %-d" }} - {{ event.end | date: "%b %-d" }}: {{ event.title }}</a> <br />
+        {{ event.location }} <br />
+        <small>{{ event.topics }}</small>
+        {% include archive-single.html type=page.entries_layout %}
+      {% endif %}
+      {% endfor %}
+    </div>
+    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+  </section>
+{% endfor %}

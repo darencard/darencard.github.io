@@ -4,12 +4,8 @@
 
 @charset "utf-8";
 
+$link-color: red;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-
-
-// your styles here
-.masthead__menu { 
-  background: black;
-}
 
 @import "minimal-mistakes"; // main partials

@@ -174,7 +174,7 @@ collections:
   minutes: 
     output: true
     permalink: /:collection/:path/
-  posts:
+  blog:
     output: true
     permalink: /:collection/:path/
 

@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /impact/
-title: Stats
+title: Impact
 ---
 ![Cumulative Participants](https://github.com/UF-Carpentry/Coordination/raw/master/graphs/cumulative_part.png)
 Cumulative participants over all workshops. Beginning of years are marked with vertical lines.

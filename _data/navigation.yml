@@ -1,0 +1,18 @@
+# main links
+main:
+  - title: "About"
+    url: /about/
+  - title: "Events"
+    url: /events/
+  - title: "Stats"
+    url: /stats/
+  - title: "Governance"
+    url: /governance/
+  - title: "Minutes"
+    url: /minutes/
+  - title: "Contact"
+    url: /contact/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/

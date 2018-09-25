@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /governance/
+permalink: /members/
 title: Club Governance
 toc: true
 toc_sticky: true

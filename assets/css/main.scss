@@ -6,9 +6,11 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 
+
 // your styles here
- .masthead__menu { 
-  background: #071159;
+$swc-blue: #071159;       // Software Carpentry dark blue
+.masthead__menu { 
+  background: $swc-blue;
 }
 
 @import "minimal-mistakes"; // main partials

@@ -5,30 +5,42 @@ title: Members
 toc: true
 toc_sticky: true
 ---
-## Current Board Members
+## Group Founders
 
-* Simona Picardi (chair, Summer 2018)
-* Hao Ye (secretary, Summer 2018)
-* Brian Stucky
-* Justin Millar
-* Kristina Riemer
-* Matthew Collins (treasurer, Summer 2018)
-* Miao Sun
+* [Daren Card](www.darencard.net)
+* Anna Williford
 
-[Previous board members]({{ site.baseurl }}/prior_board/)
+<!--[Previous board members]({{ site.baseurl }}/prior_board/)-->
 
-## Club Charter
+## Current Instructors
 
-The [club charter]({{ site.baseurl }}/charter/) describes the goals of our organization, the executive Board for the club, and our procedures for making decisions.
+* Richard Adams
+* [Daren Card](www.darencard.net)
+* Joe Cloud
+* Peace Ossom-Williamson
+* Adnan Qureshi
+* Balan Ramesh
+* Farah Shamma
+* James Titus-McQuillan
+* Anna Williford
 
-## Board Meeting Minutes
+## Previous Instructors
 
-Meetings of the board are open to the UF community. We also keep minutes of our meetings to help make decision-making transparent. Please see the [minutes page]({{ site.baseurl }}/minutes/) for links to the minutes from each board meeting.
+* Heath Blackmon
+* Gaurav Kolekar
+* Devendra Umbrajkar
+* Kevin Vilbig
 
-## Travel Awards
+## Helpers
 
-The fees from our workshops go towards supporting club activities and also as travel awards for instructors. Please see our [award policies]({{ site.baseurl }}/awards/) for more information.
-
-## Elections
-
-Elections are held annualy. The current and previous events are described on our [elections]({{ site.baseurl }}/elections/) page. 
+* Audra Andrew
+* Jees Augustine
+* Omar Bibi
+* Mehdi Eslamieh
+* Nicky Hales
+* Nitin Kanwar
+* Malini Kotak
+* Nick Long
+* Ayda Mirsalehi
+* Raisa Mustafi
+* Sailee Pawar

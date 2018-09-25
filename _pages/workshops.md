@@ -3,8 +3,6 @@ layout: single
 permalink: /about/workshops
 title: Workshops
 classes: wide
-toc: true
-toc_sticky: true
 ---
 
 Our main activity is teaching [Software](https://software-carpentry.org/) and [Data Carpentry](http://www.datacarpentry.org/) workshops. 

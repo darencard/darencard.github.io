@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /members/
-title: Club Governance
+title: Members
 toc: true
 toc_sticky: true
 ---

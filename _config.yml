@@ -16,13 +16,13 @@ minimal_mistakes_skin    : "default" # "default", "air", "aqua", "contrast", "da
 
 # Site Settings
 locale                   : "en-US"
-title                    : "UTA Carpentries"
+title                    : "Daren Card, Ph.D."
 title_separator          : "-"
-name                     : "UTA Carpentries"
-description              : "Teaching Data and Computational Skills at the University of Texas, Arlington"
-url                      : https://utacarpentries.github.io
+name                     : "Daren Card, Ph.D."
+description              : "Professional website for Daren Card, Ph.D."
+url                      : https://darencard.github.io
 baseurl                  : 
-repository               : https://github.com/utacarpentries/utacarpentries.github.io
+repository               : https://github.com/darencard/darencard.github.io
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
@@ -75,7 +75,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : darencard
 facebook:
   username               :
   app_id                 :
@@ -99,9 +99,9 @@ analytics:
 author:
   name             : ""
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Organizers of Software and Data Carpentry workshops at the University of Texas, Arlington"
-  location         : 
-  email            : "uta.carpentries@gmail.com"
+  bio              : "NSF Postdoctoral Fellow researching evolutionary genomics in reptiles"
+  location         : "Harvard University"
+  email            : "dcard@fas.harvard.edu"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -110,19 +110,19 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "darencard"
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "darencard" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
-  twitter          : "UTAcarpentries"
+  twitter          : "darencard"
   vine             :
   weibo            :
   xing             :

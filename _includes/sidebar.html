@@ -14,23 +14,5 @@
 {% endfor %}
     
 {% include author-profile.html %}
-    
-<h3>Next Event</h3>
-{% assign current_date = site.time | date: "%Y%m%d" %}
-{% assign numEvents = 0 %}
-{% for event in site.events %}
-	{% assign event_date = event.end | date: "%Y%m%d" %}
-   	{% if event_date >= current_date %}
-   		<p><a href="{{ event.website }}">{{ event.title }}</a><br />
-		{{ event.start | date: "%Y %b %-d, %I:%M %P %Z" }}<br />
-		{{ event.location }}
-		</p>
-		{% assign numEvents = numEvents | plus: 1 %}
-   	{% endif %}
-   	{% if numEvents >= 1 %}
-   		{% break %}
-   	{% endif %}
-{% endfor %}
-<a href="/events">More events...</a>
 
 </div>

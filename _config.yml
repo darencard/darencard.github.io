@@ -98,7 +98,7 @@ analytics:
 # Site Author
 author:
   name             : ""
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/Daren_Card_2018_cropped.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "NSF Postdoctoral Fellow researching evolutionary genomics in reptiles"
   location         : "Harvard University"
   email            : "dcard@fas.harvard.edu"

@@ -1,8 +1,7 @@
 ---
-layout: single
+layout: archive
 permalink: /research/
-title: Research
-classes: splash
+# title: Research
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"

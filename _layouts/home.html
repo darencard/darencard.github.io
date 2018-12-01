@@ -2,36 +2,7 @@
 layout: archive
 ---
 
-<!-- Get board feedback about using this photo
-<img src="/assets/img/ufcarpentry.jpg" />
--->
-
-
-
-<p>
-<a href="https://carpentries.org/">The Carpentries</a> is an international
-organization that teaches foundational coding and data science skills to 
-researchers worldwide. UTA Carpentries is dedicated to bringing their
-inclusive and supportive culture and curricula to the University of Texas, Arlington.
-</p>
-
-<!-- from the interwebs, no idea where to find anything the existing css-->
-<style>
-.column {
-    float: left;
-    width: 50%;
-}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-</style>
-<div class="row">
-  <div class="column"><a href="/about/workshops"><strong>Learn about our workshops</strong></a></div>
-  <div class="column"><a href="/about/community"><strong>Join our community</strong></a></div>
-</div>
-
+{{ content }}
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 

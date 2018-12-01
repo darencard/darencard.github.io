@@ -1,20 +1,14 @@
 # main links
 main:
-  - title: "About"
-    url: /about/
-  - title: "Events"
-    url: /events/
-  - title: "Impact"
-    url: /impact/
-  - title: "Members"
-    url: /members/
- # - title: "Minutes"
- #   url: /minutes/
-  - title: "Blog"
-    url: /blog/
+  - title: "Research"
+    url: /research/
+  - title: "Publications"
+    url: /publications/
+  - title: "Outreach & Press"
+    url: /outreach/
   - title: "Contact"
     url: /contact/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Links & Resources"
+    url: /links/
+  - title: "Blog"
+    url: /blog/

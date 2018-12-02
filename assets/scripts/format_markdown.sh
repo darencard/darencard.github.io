@@ -16,7 +16,7 @@ while read doi; \
 do \
 grep "${doi}" ${2}; done | awk -F "\"\,\"" '{ print $38 }' | \
 awk -F ";" '{for (i=1;i<=NF;i++){if ($i ~/.pdf$/) {print $i}}}' | \
-awk -F "/" '{ print "[<i class=\"fas fa-file-pdf\"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/raw/master/assets/pdfs/"$NF")" }') | \
+awk -F "/" '{ print "[<i class=\"fas fa-file-pdf\"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/"$NF")" }') | \
 sed -e 'G;' | \
 awk '!x{x=sub("^2012. ","## 2012\n\n")}{print $0}' | \
 awk '!x{x=sub("^2013. ","## 2013\n\n")}{print $0}' | \

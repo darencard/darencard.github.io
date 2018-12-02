@@ -12,8 +12,7 @@ header:
 
 ## 2018
 
-Pasquesi, Giulia I. M., Richard H. Adams, **Daren C. Card**, Drew R. Schield, Andrew B. Corbin, Blair W. Perry, Jacobo Reyes-Velasco, Robert P. Ruggiero, Michael W. Vandewege, Jonathan A. Shortt, and Todd A. Castoe. **Squamate Reptiles Challenge Paradigms of Genomic Repeat Element Evolution Set by Birds and Mammals.** *Nature Communications* 9 (1): 2774.
-[<i class="ai ai-doi"></i>](https://doi.org/10.1038/s41467-018-05279-1)
+Pasquesi, Giulia I. M., Richard H. Adams, **Daren C. Card**, Drew R. Schield, Andrew B. Corbin, Blair W. Perry, Jacobo Reyes-Velasco, Robert P. Ruggiero, Michael W. Vandewege, Jonathan A. Shortt, and Todd A. Castoe. **Squamate Reptiles Challenge Paradigms of Genomic Repeat Element Evolution Set by Birds and Mammals.** *Nature Communications* 9 (1): 2774.   [<i class="ai ai-doi"></i>https://doi.org/10.1038/s41467-018-05279-1](https://doi.org/10.1038/s41467-018-05279-1)
 
 ## 2017
 

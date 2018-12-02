@@ -1,5 +1,6 @@
 ---
 layout: archive
+toc: true
 permalink: /publications/
 title: Publications
 header:

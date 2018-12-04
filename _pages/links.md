@@ -39,7 +39,7 @@ header:
 ## Societies & Organizations I am Involved With
 * [Society for the Study of Evolution](http://evolutionsociety.org/)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Graduate Student Advisory Council](http://www.evolutionsociety.org/content/student-involvement.html)
+  * [Graduate Student Advisory Council](http://www.evolutionsociety.org/content/student-involvement.html)
 
 * [Society for Molecular Biology & Evolution](https://www.smbe.org/smbe/)
 

@@ -2,7 +2,7 @@
 title: News
 layout: collection
 permalink: /news/
-collection: news
+collection: blog
 entries_layout: list
 sort_by: date
 sort_order: reverse

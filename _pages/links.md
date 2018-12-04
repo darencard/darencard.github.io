@@ -11,42 +11,42 @@ header:
 
 ## Collaborators
 ### *Lerista* Limblessness
-[Scott Edwards (Harvard University)](https://edwards.oeb.harvard.edu/)
+* [Scott Edwards (Harvard University)](https://edwards.oeb.harvard.edu/)
 
-[Cliff Tabin (Harvard Medical School)](https://tabin.hms.harvard.edu/)
+* [Cliff Tabin (Harvard Medical School)](https://tabin.hms.harvard.edu/)
 
-[Steve Donnellan (University of Adelaide/South Australian Museum)](http://www.samuseum.sa.gov.au/about/staff/prof-steve-donnellan)
+* [Steve Donnellan (University of Adelaide/South Australian Museum)](http://www.samuseum.sa.gov.au/about/staff/prof-steve-donnellan)
 
-[Mark Hutchinson (South Australian Museum)](http://www.samuseum.sa.gov.au/about/staff/dr-mark-hutchinson)
+* [Mark Hutchinson (South Australian Museum)](http://www.samuseum.sa.gov.au/about/staff/dr-mark-hutchinson)
 
-[Mike Lee (Flinders University/South Australian Museum)](https://www.flinders.edu.au/people/mike.lee)
+* [Mike Lee (Flinders University/South Australian Museum)](https://www.flinders.edu.au/people/mike.lee)
 
 
 ### *Boa* and *Python* Adaptation
-[Todd Castoe (University of Texas, Arlington)](http://www.snakegenomics.org/CastoeLab/Castoe_Lab_Home.html)
+* [Todd Castoe (University of Texas, Arlington)](http://www.snakegenomics.org/CastoeLab/Castoe_Lab_Home.html)
 
-[Scott Boback (Dickinson College)](http://users.dickinson.edu/~bobacks/)
+* [Scott Boback (Dickinson College)](http://users.dickinson.edu/~bobacks/)
 
-[Warren Booth (University of Tulsa)](http://www.booth-lab.org/)
+* [Warren Booth (University of Tulsa)](http://www.booth-lab.org/)
 
-[Chad Montgomery (Truman State University)](http://chadmont.sites.truman.edu/)
+* [Chad Montgomery (Truman State University)](http://chadmont.sites.truman.edu/)
 
-[Margaret Hunter (U.S. Geological Survey)](https://profile.usgs.gov/mhunter)
+* [Margaret Hunter (U.S. Geological Survey)](https://profile.usgs.gov/mhunter)
 
-[Frank Mazzotti (University of Florida)](http://crocdoc.ifas.ufl.edu/staff/frankmazzotti/)
+* [Frank Mazzotti (University of Florida)](http://crocdoc.ifas.ufl.edu/staff/frankmazzotti/)
 
 
 ## Societies & Organizations I am Involved With
-[Society for the Study of Evolution](http://evolutionsociety.org/)
+* [Society for the Study of Evolution](http://evolutionsociety.org/)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Graduate Student Advisory Council](http://www.evolutionsociety.org/content/student-involvement.html)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* [Graduate Student Advisory Council](http://www.evolutionsociety.org/content/student-involvement.html)
 
-[Society for Molecular Biology & Evolution](https://www.smbe.org/smbe/)
+* [Society for Molecular Biology & Evolution](https://www.smbe.org/smbe/)
 
-[Genetics Society of America](http://www.genetics-gsa.org/)
+* [Genetics Society of America](http://www.genetics-gsa.org/)
 
-[National Evolutionary Sythesis Center (NESCent)](http://www.nescent.org/)
+* [National Evolutionary Sythesis Center (NESCent)](http://www.nescent.org/)
 
-[Consortium for Snake Genomics](http://www.snakegenomics.org/SnakeGenomics/Home.html)
+* [Consortium for Snake Genomics](http://www.snakegenomics.org/SnakeGenomics/Home.html)
 
-[The Carpentries (Software & Data Carpentry)](https://carpentries.org/)
+* [The Carpentries (Software & Data Carpentry)](https://carpentries.org/)

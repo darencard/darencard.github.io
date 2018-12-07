@@ -8,4 +8,11 @@ header:
   overlay_image: /assets/images/banner1.jpg
 ---
 
-Test
+feature_row:
+  - image_path: /assets/images/Daren_Card_2018_cropped.jpeg
+    alt: "Daren Card"
+    title: "About"
+    excerpt: 'My name is Daren Card and I am a NSF Postdoctoral Research Fellow in the [Edwards lab at Harvard University](https://edwards.oeb.harvard.edu/). I obtained my Ph.D. in the [Castoe lab at the University of Texas, Arlington](http://www.snakegenomics.org/CastoeLab/Castoe_Lab_Home.html). I am originally from Jamestown, New York and received my bachelor’s degree in Conservation Biology from SUNY College of Environmental Science and Forestry. My current research uses genomics to understand broad questions in evolutionary biology using natural vertebrate systems. Please check out the various pages on this site to learn more about me, my interests, and my work.'
+---
+
+{% include feature_row id="feature_row" type="left" %}

@@ -10,6 +10,10 @@ header:
 
 <!-- [2018](#2018)     [2017](#2017)     [2016](#2016)     [2015](#2015)     [2014](#2014)     [2013](#2013) -->
 
+## Summary
+
+![Citation Summary](/assets/images/citation_summary.png)
+
 ## 2018
 
 Adams, Richard H., Drew R. Schield, **Daren C. Card**, and Todd A. Castoe. [Assessing the Impacts of Positive Selection on Coalescent-Based Species Tree Estimation and Species Delimitation](https://doi.org/10.1093/sysbio/syy034). *Systematic Biology* 67 (6): 1076–90. [<i class="ai ai-doi"></i>https://doi.org/10.1093/sysbio/syy034](https://doi.org/10.1093/sysbio/syy034). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/AdamsRA_2018_Syst_Biol_Assessing_the_Impacts_of_Positive_Selection_on_Coalescent-Based_Species_Tree_Estimation_and_Species_Delimitation.pdf)

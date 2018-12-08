@@ -86,3 +86,6 @@ Shaney, Kyle J., **Daren C. Card**, Drew R. Schield, Robert P. Ruggiero, David D
 
 Castoe, Todd A., A. P. Jason de Koning, Kathryn T. Hall, **Daren C. Card**, Drew R. Schield, Matthew K. Fujita, Robert P. Ruggiero, Jack F. Degner, Juan M. Daza, Wanjun Gu, Jacobo Reyes-Velasco, Kyle J. Shaney, Jill M. Castoe, Samuel E. Fox, Alex W. Poole, Daniel Polanco, Jason Dobry, Michael W. Vandewege, Qing Li, Ryan K. Schott, Aurélie Kapusta, Patrick Minx, Cédric Feschotte, Peter Uetz, David A. Ray, Federico G. Hoffmann, Robert Bogden, Eric N. Smith, Belinda S. W. Chang, Freek J. Vonk, Nicholas R. Casewell, Christiaan V. Henkel, Michael K. Richardson, Stephen P. Mackessy, Anne M. Bronikowski, Mark Yandell, Wesley C. Warren, Stephen M. Secor, and David D. Pollock. [The Burmese Python Genome Reveals the Molecular Basis for Extreme Adaptation in Snakes](https://doi.org/10.1073/pnas.1314475110). *Proceedings of the National Academy of Sciences* 110 (51): 20645–50. [<i class="ai ai-doi"></i>https://doi.org/10.1073/pnas.1314475110](https://doi.org/10.1073/pnas.1314475110). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/CastoeTC_2013_PNAS_The_Burmese_python_genome_reveals_the_molecular_basis_for_extreme_adaptation_in_snakes.pdf)
 
+
+
+Last Updated: 2018-12-08

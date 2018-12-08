@@ -16,4 +16,5 @@ cat \
 <(cat yaml_header.txt) \
 <(cat citation_summary_markdown.txt) \
 <(bash ./format_markdown.sh dcc_bibliography.bib dcc_bibliography.csv) \
+<(echo -e "\n\nLast Updated:" `date +%Y-%m-%d`) \
 > ../../_pages/publications.md

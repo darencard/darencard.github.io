@@ -5,7 +5,7 @@ title: Publications
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/banner3.jpg
+  overlay_image: /assets/images/banner1.jpg
 ---
 
 <!-- [2018](#2018)     [2017](#2017)     [2016](#2016)     [2015](#2015)     [2014](#2014)     [2013](#2013) -->
@@ -88,4 +88,4 @@ Castoe, Todd A., A. P. Jason de Koning, Kathryn T. Hall, **Daren C. Card**, Drew
 
 
 
-Last Updated: 2018-12-08
+Last Updated: 2019-01-25

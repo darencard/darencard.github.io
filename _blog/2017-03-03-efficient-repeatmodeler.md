@@ -2,7 +2,7 @@
 layout: posts
 title: "Running RepeatModeler more efficiently on sequencing reads"
 date: 2017-03-03
-excerpt: "Instructions for modifying RepeatModeler to run more efficiently on sequencing reads"
+excerpt: "Instructions for modifying RepeatModeler to run more efficiently on sequencing reads."
 ---
 
 RepeatModeler isn't very well suited for sample sequencing data, taking a long time and creating copious amounts of intermediate data files. It obviously wasn't designed for small fragments and reads, which are what we get with sample sequencing data, and here are the main difficulties.

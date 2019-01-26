@@ -4,8 +4,8 @@ main:
     url: /research/
   - title: "Publications"
     url: /publications/
-  - title: "Outreach"
-    url: /outreach/
+#  - title: "Outreach"
+#    url: /outreach/
   - title: "News & Blog"
     url: /blog/
   - title: "Links & Resources"

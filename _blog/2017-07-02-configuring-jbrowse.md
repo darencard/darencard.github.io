@@ -2,7 +2,7 @@
 layout: posts
 title: "Configuring JBrowse"
 date: 2017-07-02
-excerpt: "Instructions for configuring JBrowse for viewing genome annotations"
+excerpt: "Instructions for configuring JBrowse for viewing genome annotations."
 ---
 
 JBrowse is a handy genome browser and is especially useful for viewing the results of iterative rounds of [MAKER](http://gmod.org/wiki/MAKER). The documentation is decent, but for those not used to creating a data server, it can be difficult to understand. I struggled a bit at first.

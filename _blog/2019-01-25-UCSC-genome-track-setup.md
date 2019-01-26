@@ -2,7 +2,7 @@
 layout: posts
 title: "Visualizing Genome Annotations"
 date: 2019-01-25
-excerpt: "Creating a UCSC Genome Track for Viewing Genome Annotations"
+excerpt: "Creating a UCSC Genome Track for Viewing Genome Annotations."
 ---
 
 # Creating a UCSC Genome Track for Viewing Genome Annotations

@@ -2,7 +2,7 @@
 layout: posts
 title: "Useful One-liners for Calculating Population Genetic Statistics from VCF files"
 date: 2017-07-18
-excerpt: "Various Bash one-liners for summarizing variant data"
+excerpt: "Various Bash one-liners for summarizing variant data."
 ---
 
 Useful one-liners that I have come up with to summarize variant data from VCF files.

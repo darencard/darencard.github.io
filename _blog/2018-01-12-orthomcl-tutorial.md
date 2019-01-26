@@ -2,7 +2,7 @@
 layout: posts
 title: "Tutorial for running OrthoMCL"
 date: 2018-01-12
-excerpt: "Step-by-step guide to running OrthoMCL ortholog detection software"
+excerpt: "Step-by-step guide to running OrthoMCL ortholog detection software."
 ---
 
 [`OrthoMCL`](http://orthomcl.org/orthomcl/) is the leading piece of software for inferring orthologs across several organisms. In this tutorial I will provide detailed instructions for running a set of protein annotations through `OrthoMCL`.

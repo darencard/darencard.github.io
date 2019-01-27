@@ -1,0 +1,44 @@
+---
+layout: posts
+title: "Submitting data to the NCBI SRA"
+date: 2019-01-25
+excerpt: "How-to on creating BioProjects, BioSamples, and SRA submissions."
+---
+
+Note: This is an old post and the interfaces and steps have changed, but for the better. This is kept here as is and should still be relatively helpful.
+
+Recently, I've submitted several sets of sequencing reads to NCBI's Sequence Read Archive (SRA) in anticipation of a papers we are publishing. I previously found that NCBI does a pretty bad job of explaining how to actually upload the files for submission and wrote this guide, which I subsequently edited to be more thorough and complete. The overall description of actually creating a submission isn't great, as currently you not only create an SRA, but also a BioProject and a BioSample. I thought I would explain the basics of what I did for creating my submission online and then describe the process of actually uploading the files to the SRA so they can be associated with your submission (it is not a simple upload, like you may be accustomed to). I should note that the instructions I have here are based on Mac OSx, though they should be very similar (or identical) with Linux. Windows will likely be pretty similar too (except for determining the MD5 checksum), but you may have to use Google for a little help. Here we go:
+
+1. Log in to or sign up for an NCBI account.
+2. Go to the BioProject page and click 'New Submission'.
+3. You will then be asked to fill in various fields over a range of pages, some required and some not required. The BioProject Help booklet explains what each of these fields means and I'll leave you to fill them in for your submission. At this point you can leave the BioSample field clear, since you haven't created a BioSample yet (we will do this next).
+4. If you are submitting a small number of BioSamples, you can do them individually through the web browser. First go to the BioSample page and click 'New Submission'.
+5. On the 'General info' tab you will specify that you are submitting a single sample (you will repeat the necessary steps for the rest of your submissions). Otherwise, you will fill in various fields and the SRA Handbook will be your guide to their meaning.
+6. If you are submitting a large number of BioSamples, you should use the batch submission option to make your life a thousand times easier. Next to the 'New Submission' button there is a link called "Download batch template". You will be prompted to specify the type of sample you are uploading, and upon doing a template will be downloaded. This will be tab delimited text, which can be easily edited and saved using Excel (but be sure to keep it as tab delimited text). Fill in the required and necessary unrequired information. Now you can click 'New Submission' and fill everything in as above (see E.), but you will instead specify that you are submitting a batch of multiple BioSamples. NCBI will ask you to upload your completed template, will check that everything is filled in correctly, and will proceed in a logical manner.
+7. You should pause here and wait for NCBI to actually accept these submissions without error. It will be obvious when that occurs (you may have to refresh a few times). Note the accession numbers that are assigned to each. It only took a couple minutes each for the submissions I made today.
+8. You actual SRA submission will also differ depending on whether you are submitting one or a few runs versus a batch of runs. To do the submission for one or a few samples, go to the SRA page and click 'Submit to SRA' and then 'Create new submission'. Here, you just give the sample alias and perhaps a description.
+9. Next, you click on the 'New Experiment' button to proceed and enter data about the experiment. Again, I will leave it to you to fill in the relevant fields using the SRA Handbook. Most importantly, here is where you will associate the SRA entry with both the BioProject and BioSample using the accession numbers created for those entries.
+10. Once the experiment is complete you can then fill in the run details by clicking 'New Run'. Fill in an appropriate alias and then you can finally designate the reads that you plan to upload.
+11. For each read file (paired-end data comes in two files), you should fill in a sample file type and sample name (including extension; e.g., fastq). NCBI will accept gzipped or bzipped files so make sure that designation is included where applicable. The sample name should exactly match the file you will upload.
+12. For each file, you also need to input an MD5 checksum that matches that for the file. To obtain this in Mac OSx you simply open the terminal and type `md5 /path/to/file/filename`.
+13. For each file, take the outputted MD5 checksum and copy it exactly into the field on NCBI. Once you have done this for all read files, you can click save.
+14. Alternatively, if you are doing a batch submission you will need to properly fill out an Excel template workbook, which is provided by NCBI. There is some basic information about the submission on the first sheet of the workbook, along with some basic instructions. The second sheet contains most of the fields that need to be completed while the third sheet has definitions for everything. Be sure that you enter the BioProject accession and individual BioSample accessions for each run (note that some BioSamples may have more than one run). NCBI will need these to properly link the SRA accessions it creates with the BioSample/BioProject accessions you already have. The other fields should be self-explanatory and see the steps above for determining MD5 checksums. Save a completed version of the template (as an Excel document) and email it to the SRA folks at NCBI using the email address sra@ncbi.nlm.nih.gov. You can briefly describe your data in the body of the message, but otherwise they shouldn't need anything more than the attached template. You should be notified that they received your email soon after sending it and you can expect your request to be processed within a couple of days. You will not be able to proceed without confirmation that the accessions were created by an SRA curator.
+15. Once you have entered all of the run details individually on your browser or have sent the completed SRA template to NCBI and received confirmation that it was accepted, you are ready to proceed and actually upload your read data.
+16. If you did a small submission you may have noticed directions for using the SRA ftp on the run details page. If you submitted a batch template you can view these instructions by clicking the sample name link next to a run on the SRA submission summary page. Note the ftp domain, the username, and the password, as you will need these.
+17. You can now use the ftp program in the terminal to complete the process. First, I would makes sure all read files for a given SRA submission are in the same directory and then I would change directories (cd) into that directory.
+18. You can then initiate the upload using the following commands:
+```bash
+ftp -i
+open # Likely .ncbi.nih.gov; then some
+# text should appear and you will be prompted for a #username.
+> #Probably 'sra'.
+> $ mput * # Will upload each read file in the directory
+# one-by-one until they are complete. Be sure that you
+# also modify the wildcard argument if you have more than
+# just read files in your working directory.
+bye # Closes ftp.
+```
+
+19. Once the files are uploaded, NCBI will associate them with your SRA submission and you should find the status will eventually indicate the process is complete. NCBI states that this could take some time, so I would give it a day before I would start emailing NCBI, if the status does not show as complete.
+
+That should take care of everything. One thing to note is that you can control the release date, in case you don't want your data made public quite yet. Much of this information can probably be changed manually later, though I don't have experience on how to do that. Hopefully this is useful to people, as the directions aren't explicit on NCBI and you are left to fill in some of the blanks. There are other guides out there that I also came across, but I figured it might serve everyone well to make a current one, since things seem to have changed recently. And now I have a cheat sheet for when I need to do this again!

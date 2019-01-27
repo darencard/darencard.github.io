@@ -10,13 +10,11 @@ It has been some time since I've posted anything, and I'm trying to start bloggi
 You can find the thread by visiting [https://www.biostars.org/p/111040](https://www.biostars.org/p/111040/).
 
 The command is a long pipe, as follows:
-
 ```bash
 esearch -db sra -query | efetch --format runinfo | cut -d ',' -f 1 | grep SRR | xargs fastq-dump --split-files --bzip2
 ```
 
 I'll break this all down so it is apparent what this command is doing.
-
 1. First, `esearch`, part of the NCBI Entrez Direct utilities, queries the database chosen (here, the SRA) with an accession (in the case of a batch, a Bioproject is most appropriate).
 2. The STDOUT from #1 is directed into `efetch`, which uses this metadata to format a report in the 'runinfo' format, which is a comma-separated table of information about the accession.
 3. The STDOUT from #2 is then subsetted, such it splits columns by commas and takes only the first column, which corresponds to the SRR accession numbers.

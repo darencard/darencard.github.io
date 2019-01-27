@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "Imbedding Gist into webpage Markdown"
+title: "Embedding Gist into webpage Markdown"
 date: 2019-01-25
 excerpt: "How-to on imbedding Gist content into Minimal Mistakes markdown blog post."
 ---

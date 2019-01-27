@@ -2,7 +2,7 @@
 layout: posts
 title: "Introductory walkthrough of SLiM"
 date: 2017-08-26
-excerpt: "Some notes I made as I began learning forward-time simulation using SLiM."
+excerpt: "Some notes I made as I began learning forward-time simulation using SLiM"
 ---
 
 [SLiM](https://messerlab.org/slim/) is a newer, powerful piece of population genetic simulation software that is well documented, user-friendly, flexible, and has a pretty sweet GUI interface (plus command-line capability). The following script represents an initial dummy simulation situation I created as I got my feet wet with `SLiM`, and I added many commented notes to make it clear what each command was doing.

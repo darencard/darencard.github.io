@@ -2,7 +2,7 @@
 layout: posts
 title: "Extracting paired FASTQ read data from a BAM mapping file"
 date: 2018-09-07
-excerpt: "Details on acquiring reads from BAM file."
+excerpt: "Details on acquiring reads from BAM file"
 ---
 
 Sometimes FASTQ data is aligned to a reference and stored as a BAM file, instead of the normal FASTQ read files. This is okay, because it is possible to recreate raw FASTQ files based on the BAM file. The following outlines this process. The useful software `samtools` and `bedtools` are both required.

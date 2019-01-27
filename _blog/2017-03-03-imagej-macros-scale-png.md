@@ -2,7 +2,7 @@
 layout: posts
 title: "ImageJ macro for adding scale bars automatically"
 date: 2017-03-03
-excerpt: "Useful ImageJ macro that automatically adds scale bars to images."
+excerpt: "Useful ImageJ macro that automatically adds scale bars to images"
 ---
 
 Below is a ImageJ macro that will read a user-provided image file, add a scale bar, and then output a PNG image. The user must specify two arguments, the input file and the output file, as one quote-enclosed argument (see example below). The scale bar characteristics have been hard coded and can be changed by hand, or the script can be modified to allow argument specifications.

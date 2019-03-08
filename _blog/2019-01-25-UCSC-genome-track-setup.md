@@ -76,6 +76,73 @@ sort-bed SolPar_full.all.maker.noseq.no_repeats.maker_only.bed12 > SolPar_full.a
 bedToBigBed SolPar_full.all.maker.noseq.no_repeats.maker_only.sorted.bed12 SolPar.formated_assembly.chrom.sizes SolPar_full.all.maker.noseq.no_repeats.maker_only.bigBed
 ```
 
+We can also create a second gene annotation track that has homology information, which gives functional information about each gene that is totally missing from the generic Maker IDs. I have two lookup tables that will help with this. The first associates the long, ugly Maker IDs with clean, sequential transcript/protein number.
+
+```
+# file format is tab-delimited transcript number, Maker transcript ID, protein number, and Maker protein ID
+# here is a look at first few lines for example
+head SolPar_rnd3.all.maker.transcripts_protein.lookup_table.txt
+transcript-1 1968       maker-scaffold-162-augustus-gene-1.4-mRNA-1 transcript offset:0 AED:0.10 eAED:0.33 QI:0|0|0|1|0.9|0.90|11|0|655 protein-1 655  maker-scaffold-162-augustus-gene-1.4-mRNA-1 protein AED:0.10 eAED:0.33 QI:0|0|0|1|0.9|0.90|11|0|655
+transcript-2 903        maker-scaffold-162-augustus-gene-1.3-mRNA-1 transcript offset:0 AED:0.10 eAED:0.39 QI:0|0|0|1|0.87|1|9|0|300    protein-2 300  maker-scaffold-162-augustus-gene-1.3-mRNA-1 protein AED:0.10 eAED:0.39 QI:0|0|0|1|0.87|1|9|0|300
+transcript-3 405        maker-scaffold-162-augustus-gene-1.5-mRNA-1 transcript offset:0 AED:0.44 eAED:0.86 QI:0|0|0|1|1|1|3|0|134       protein-3 134  maker-scaffold-162-augustus-gene-1.5-mRNA-1 protein AED:0.44 eAED:0.86 QI:0|0|0|1|1|1|3|0|134
+transcript-4 726        maker-scaffold-162-augustus-gene-2.8-mRNA-1 transcript offset:0 AED:0.06 eAED:0.63 QI:0|0|0|0.83|0.6|0.5|6|0|241      protein-4 241    maker-scaffold-162-augustus-gene-2.8-mRNA-1 protein AED:0.06 eAED:0.63 QI:0|0|0|0.83|0.6|0.5|6|0|241
+transcript-5 4296       maker-scaffold-162-augustus-gene-2.6-mRNA-1 transcript offset:0 AED:0.03 eAED:0.68 QI:0|0|0|0.9|0.34|0.43|30|0|1431   protein-5 1431   maker-scaffold-162-augustus-gene-2.6-mRNA-1 protein AED:0.03 eAED:0.68 QI:0|0|0|0.9|0.34|0.43|30|0|1431
+transcript-6 5340       maker-scaffold-162-augustus-gene-2.7-mRNA-1 transcript offset:0 AED:0.05 eAED:0.70 QI:0|0|0|0.97|0.51|0.64|34|0|1779  protein-6 1779   maker-scaffold-162-augustus-gene-2.7-mRNA-1 protein AED:0.05 eAED:0.70 QI:0|0|0|0.97|0.51|0.64|34|0|1779
+transcript-7 2109       maker-scaffold-162-augustus-gene-2.9-mRNA-1 transcript offset:0 AED:0.03 eAED:0.81 QI:0|0|0|0.87|0.42|0.37|8|0|702    protein-7 702    maker-scaffold-162-augustus-gene-2.9-mRNA-1 protein AED:0.03 eAED:0.81 QI:0|0|0|0.87|0.42|0.37|8|0|702
+transcript-8 3513       maker-scaffold-162-augustus-gene-3.4-mRNA-1 transcript offset:0 AED:0.04 eAED:0.49 QI:0|0|0|0.94|1|1|17|0|1170  protein-8 1170 maker-scaffold-162-augustus-gene-3.4-mRNA-1 protein AED:0.04 eAED:0.49 QI:0|0|0|0.94|1|1|17|0|1170
+transcript-9 885        augustus_masked-scaffold-162-processed-gene-3.2-mRNA-1 transcript offset:0 AED:0.18 eAED:0.62 QI:0|0|0|0.8|1|1|5|0|294protein-9 294    augustus_masked-scaffold-162-processed-gene-3.2-mRNA-1 protein AED:0.18 eAED:0.62 QI:0|0|0|0.8|1|1|5|0|294
+transcript-10 3672      maker-scaffold-162-augustus-gene-3.6-mRNA-1 transcript offset:0 AED:0.03 eAED:0.27 QI:0|0|0|1|0.76|0.78|14|0|1223     protein-10 1223  maker-scaffold-162-augustus-gene-3.6-mRNA-1 protein AED:0.03 eAED:0.27 QI:0|0|0|1|0.76|0.78|14|0|1223
+```
+
+The second associates the clean, sequential gene numbers with homology information. This homology information is derived from BLAST searches against other genome annotations from NCBI.
+
+```
+# file format is tab-delimited protein number, gene symbol|NCBI source, RBB=reciprocal best BLAST, proteins-proteins=match type, blastp-blastp=search types, 0.001=evalue threshold
+# here is a look at first few lines for example
+head SolPar_full.all.maker.proteins.homology_table.txt
+protein-1       ITGB6|XP_012584073.1    RBB     proteins-proteins       blastp-blastp   0.001
+protein-10      TANC1|XP_012582326.1    RBB     proteins-proteins       blastp-blastp   0.001
+protein-100     STX7|XP_004674174.1     RBB     proteins-proteins       blastp-blastp   0.001
+protein-1000    RASL10B|XP_012581437.1  RBB     proteins-proteins       blastp-blastp   0.001
+protein-10000   GPAA1|XP_012578323.1    RBB     proteins-proteins       blastp-blastp   0.001
+protein-10001   LOC101618433|XP_012578321.1     RBB     proteins-proteins       blastp-blastp   0.001
+protein-10002   SHARPIN|XP_012578322.1  RBB     proteins-proteins       blastp-blastp   0.001
+protein-10003   ARHGAP18|XP_012578495.1 RBB     proteins-proteins       blastp-blastp   0.001
+protein-10004   EPHX4|XP_004689842.1    RBB     proteins-proteins       blastp-blastp   0.001
+protein-10005   CHST3|XP_012579325.1    RBB     proteins-proteins       blastp-blastp   0.001
+```
+
+Using these two files we can replace add homology/functional information to each Maker ID in the bed12 files and create a distinct track with this critical information.
+
+```
+# create new bed12 file with homology information included in gene IDs
+# first create lookup table associating Maker ID with protein number and homology info
+cat SolPar_full.all.maker.noseq.no_repeats.maker_only.sorted.bed12 | grep -v "trnascan" | \
+while read line; \
+do \
+query=`echo ${line} | awk '{ print $4 }'`; \
+protein=`grep -w "${query}" ../SolPar_rnd3.all.maker.transcripts_protein.lookup_table.txt | \
+awk -F "\t" '{ print $3 }' | awk '{ print $1 }'`; \
+homolog=`grep -w "${protein}" ../SolPar_full.all.maker.proteins.homology_table.txt | awk -F "\t" '{ print $2 }'`; \
+echo $query $protein $homolog; \
+done \
+> homology_associations.txt
+
+# now replace 4th column of bed12 file with new gene ID that provides homology information
+cat SolPar_full.all.maker.noseq.no_repeats.maker_only.sorted.bed12 | \
+while read line; \
+do \
+old=`echo ${line} | awk '{ print $4 }'`; \
+new=`grep -w "${old}" homology_associations.txt | awk '{ print $2"|"$3 }'`; \
+echo ${line} | \
+awk -v OFS="\t" -v old="${old}" -v new="${new}" '{ print $1, $2, $3, old"|"new, $5, $6, $7, $8, $9, $10, $11, $12 }'; \
+done \
+> SolPar_full.all.maker.noseq.no_repeats.maker_only.sorted.homology.bed12
+
+# convert the bed12 into bigBed format
+bedToBigBed SolPar_full.all.maker.noseq.no_repeats.maker_only.sorted.homology.bed12 SolPar.formated_assembly.chrom.sizes SolPar_full.all.maker.noseq.no_repeats.maker_only.homology.bigBed
+```
+
 The `2bit` and two `bigBed` files are the data files we need for our genome browser.
 
 ## Creating Genome Track Configuration Files

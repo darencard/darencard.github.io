@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "Google Drive download from command line"
-date: 2019-01-25
+date: 2017-08-02
 excerpt: "Bash script to download Google Drive file via the command line."
 ---
 

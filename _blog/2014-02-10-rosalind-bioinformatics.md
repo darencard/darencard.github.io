@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "Plug for Rosalind Bioinformatics learning resource"
-date: 2019-01-25
+date: 2014-02-10
 excerpt: "Learn bioinformatics in any language using Rosalind."
 ---
 

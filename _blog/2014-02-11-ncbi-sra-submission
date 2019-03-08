@@ -1,11 +1,11 @@
 ---
 layout: posts
 title: "Submitting data to the NCBI SRA"
-date: 2019-01-25
+date: 2014-02-11
 excerpt: "How-to on creating BioProjects, BioSamples, and SRA submissions."
 ---
 
-Note: This is an old post and the interfaces and steps have changed, but for the better. This is kept here as is and should still be relatively helpful.
+Note: This is an old post and the interfaces and steps have changed, but for the better. This is kept here as-is and should still be relatively helpful.
 
 Recently, I've submitted several sets of sequencing reads to NCBI's Sequence Read Archive (SRA) in anticipation of a papers we are publishing. I previously found that NCBI does a pretty bad job of explaining how to actually upload the files for submission and wrote this guide, which I subsequently edited to be more thorough and complete. The overall description of actually creating a submission isn't great, as currently you not only create an SRA, but also a BioProject and a BioSample. I thought I would explain the basics of what I did for creating my submission online and then describe the process of actually uploading the files to the SRA so they can be associated with your submission (it is not a simple upload, like you may be accustomed to). I should note that the instructions I have here are based on Mac OSx, though they should be very similar (or identical) with Linux. Windows will likely be pretty similar too (except for determining the MD5 checksum), but you may have to use Google for a little help. Here we go:
 

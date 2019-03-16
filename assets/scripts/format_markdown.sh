@@ -7,7 +7,7 @@ paste -d " " \
 sed -e 's/\\\[/\[/g' -e 's/\\\]/\]/g' -e 's/[<>]//g' | \
 sed -e 's/Daren\ C\.\ Card/\*\*Daren\ C\.\ Card\*\*/g' -e 's/Card\,\ Daren\ C\./\*\*Card\,\ Daren\ C\.\*\*/g' | \
 sed -e 's/DOI/\<i\ class\=\"ai\ ai\-doi\"\>\<\/i\>/g' | sed '/^$/d' | \
-sed 's/2018\.\ Perry\,\ Blair\ W\.\,\ \*\*Daren\ C\.\ Card\*\*/2018\.\ Perry\,\ Blair\ W\.\†\/\*\*Daren\ C\.\ Card\†\*\*\\[\†\ authors\ contributed\ equally\]/g') \
+sed 's/2018\.\ Perry\,\ Blair\ W\.\,\ \*\*Daren\ C\.\ Card\*\*/2018\.\ Perry\,\ Blair\ W\.\†\/\*\*Daren\ C\.\ Card\†\*\*\\\ [\†\ authors\ contributed\ equally\]/g') \
 <(pandoc tex_guide.tex --columns=100000 --csl=chicago-modified.csl -t markdown_strict --bibliography ${1} | \
 sed -e 's/\\\[/\[/g' -e 's/\\\]/\]/g' -e 's/[<>]//g' | \
 sed -e 's/Daren\ C\.\ Card/\*\*Daren\ C\.\ Card\*\*/g' -e 's/Card\,\ Daren\ C\./\*\*Card\,\ Daren\ C\.\*\*/g' | \

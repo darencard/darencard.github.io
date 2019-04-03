@@ -7,7 +7,7 @@ excerpt: "My dissertation defense on rapid adaptation in snakes has concluded!"
 
 Yesterday, I completed the final step of my doctoral degree, defending my dissertation. The dissertation is entitled "Using snake genomes to illuminate the patterns and mechanisms of rapid adaptation". I'm happy to report that it went well!
 
-![dissertation flyer](https://github.com/darencard/darencard.github.io/raw/master/assets/images/Disseration_defense_flyer.png "Dissertation Defense Flyer")
+![dissertation flyer](https://github.com/darencard/darencard.github.io/raw/master/assets/images/blog/Disseration_defense_flyer.png "Dissertation Defense Flyer")
 
 I also want to use this outlet to thank everyone who helped to make this a successful endeavor. Here is a copy of my acknowledgement section from my written dissertation:
 

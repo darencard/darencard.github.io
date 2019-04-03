@@ -11,4 +11,4 @@ For the past several years I have led a parallel project on Burmese pythons that
 
 In this article, we describe the work we did exploring evolution and adaptation in the well-known Florida population of invasive Burmese pythons. Remarkably, despite researching Burmese pythons in a parallel manner for several years, we have found that these research paths have now converged and tell us something about how Burmese pythons have thrived as an invasive species in Florida. You can learn all about it in the article or by reading this [press release](https://www.uta.edu/news/releases/2018/10/rapid-evolution.php). Excited to finally have this paper out and, as this photo indicates, I enjoyed being able to work on this interesting model system during my PhD!
 
-![Burmese python](https://github.com/darencard/darencard.github.io/raw/master/assets/images/FL_CastoeLab_BurmesePython_2015.png "15-foot Burmese python found in Florida")
+![Burmese python](https://github.com/darencard/darencard.github.io/raw/master/assets/images/blog/FL_CastoeLab_BurmesePython_2015.png "15-foot Burmese python found in Florida")

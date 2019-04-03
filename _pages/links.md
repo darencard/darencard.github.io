@@ -5,8 +5,7 @@ title: Links & Resources
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/banner5.jpg
----
+  overlay_image: /assets/images/banners/banner5.jpg
 ---
 
 ## Collaborators

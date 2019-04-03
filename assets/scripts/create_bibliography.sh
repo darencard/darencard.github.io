@@ -9,7 +9,7 @@ bash ./gather_pdfs.sh dcc_bibliography.csv
 
 # create citation summary graphics
 cat dcc_bibliography.csv | awk -F "\"\,\"" '{ print $9 }' | sed '/^$/d' > doi.txt
-Rscript produce_citation_summary.R doi.txt ../images/citation_summary.png
+Rscript produce_citation_summary.R doi.txt ../images/publications/citation_summary.png
 
 # format full publications markdown page and write to proper location
 cat \

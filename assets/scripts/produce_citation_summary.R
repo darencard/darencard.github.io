@@ -20,15 +20,15 @@ produce_citation_summary <- function(doi_intable, out_imgpath) {
   
   get_crossref_profile <- function(doi_tbl) {
     cite_vec <- NULL
-    for (row in 1:nrow(dcc_doi)) {
-      doi <- dcc_doi[row,1]
-      cite_num <- cr_citation_count(doi)
+    for (row in 1:nrow(doi_tbl)) {
+      doi <- doi_tbl[row,1]
+      cite_num <- cr_citation_count(doi)$count
       cite_vec <- c(cite_vec, cite_num)
     }
     
-    dcc_doi$Cites <- cite_vec
+    doi_tbl$Cites <- cite_vec
     
-    citations <- dcc_doi[order(dcc_doi$Cites,decreasing=TRUE),]
+    citations <- doi_tbl[order(doi_tbl$Cites,decreasing=TRUE),]
     citations <- cbind(id=rownames(citations),citations)
     citations$id<- as.character(citations$id)
     citations$id<- as.numeric(citations$id)

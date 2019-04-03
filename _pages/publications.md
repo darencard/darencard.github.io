@@ -12,7 +12,7 @@ header:
 
 ## Summary
 
-![Citation Summary](/assets/images/citation_summary.png)
+![Citation Summary](/assets/images/publications/citation_summary.png)
 
 ## 2018
 

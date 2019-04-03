@@ -14,6 +14,12 @@ header:
 
 ![Citation Summary](/assets/images/publications/citation_summary.png)
 
+## 2019
+
+Schield, Drew R., **Daren C. Card**, Nicole R. Hales, Blair W. Perry, Giulia M. Pasquesi, Heath Blackmon, Richard H. Adams, Andrew B. Corbin, Cara F. Smith, Balan Ramesh, Jeffery P. Demuth, Esther Betrán, Marc Tollis, Jesse M. Meik, Stephen P. Mackessy, and Todd A. Castoe. [The Origins and Evolution of Chromosomes, Dosage Compensation, and Mechanisms Underlying Venom Regulation in Snakes](https://doi.org/10.1101/gr.240952.118). *Genome Research* 29 (4): 590–601. [<i class="ai ai-doi"></i>https://doi.org/10.1101/gr.240952.118](https://doi.org/10.1101/gr.240952.118). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/SchieldDS_2019_Genome_Res._The_origins_and_evolution_of_chromosomes,_dosage_compensation,_and_mechanisms_underlying_venom_regulation_in_snakes.pdf)
+
+Pinto, Brendan J., **Daren C. Card**, Todd A. Castoe, Raul E. Diaz, Stuart V. Nielsen, Paul A. Trainor, and Tony Gamble. [The Transcriptome of the Veiled Chameleon (Chamaeleo Calyptratus): A Resource for Studying the Evolution and Development of Vertebrates](https://doi.org/10.1002/dvdy.20). *Developmental Dynamics* 0 (0). [<i class="ai ai-doi"></i>https://doi.org/10.1002/dvdy.20](https://doi.org/10.1002/dvdy.20). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/PintoBP_2019_Developmental_Dynamics_The_transcriptome_of_the_veiled_chameleon_(Chamaeleo_calyptratus)_-_A_resource_for_studying_the_evolution_and_development_of_vertebrates.pdf)
+
 ## 2018
 
 Adams, Richard H., Drew R. Schield, **Daren C. Card**, and Todd A. Castoe. [Assessing the Impacts of Positive Selection on Coalescent-Based Species Tree Estimation and Species Delimitation](https://doi.org/10.1093/sysbio/syy034). *Systematic Biology* 67 (6): 1076–90. [<i class="ai ai-doi"></i>https://doi.org/10.1093/sysbio/syy034](https://doi.org/10.1093/sysbio/syy034). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/AdamsRA_2018_Syst_Biol_Assessing_the_Impacts_of_Positive_Selection_on_Coalescent-Based_Species_Tree_Estimation_and_Species_Delimitation.pdf)
@@ -88,4 +94,4 @@ Castoe, Todd A., A. P. Jason de Koning, Kathryn T. Hall, **Daren C. Card**, Drew
 
 
 
-Last Updated: 2019-03-16
+Last Updated: 2019-04-03

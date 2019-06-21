@@ -5,7 +5,7 @@ title: Publications
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/banners/banner10.jpg
+  overlay_image: /assets/images/banners/banner1.jpg
 ---
 
 <!-- [2018](#2018)     [2017](#2017)     [2016](#2016)     [2015](#2015)     [2014](#2014)     [2013](#2013) -->
@@ -15,6 +15,8 @@ header:
 ![Citation Summary](/assets/images/publications/citation_summary.png)
 
 ## 2019
+
+Lamichhaney, Sangeet, **Daren C. Card**, Phil Grayson, Tonini, Gustavo A. Bravo, Kathrin Näpflin, Flavia Termignoni-Garcia, Christopher Torres, Frank Burbrink, Julia A. Clarke, Timothy B. Sackton, and Scott V. Edwards. [Integrating Natural History Collections and Comparative Genomics to Study the Genetic Architecture of Convergent Evolution](https://doi.org/10.1098/rstb.2018.0248). *Philosophical Transactions of the Royal Society B: Biological Sciences* 374 (1777): 20180248. [<i class="ai ai-doi"></i>https://doi.org/10.1098/rstb.2018.0248](https://doi.org/10.1098/rstb.2018.0248). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/LamichhaneySL_2019_Philosophical_Transactions_of_the_Royal_Society_B_Biological_Sciences_Integrating_natural_history_collections_and_comparative_genomics_to_study_the_genetic_architecture_of_convergent_evolution.pdf)
 
 Schield, Drew R., **Daren C. Card**, Nicole R. Hales, Blair W. Perry, Giulia M. Pasquesi, Heath Blackmon, Richard H. Adams, Andrew B. Corbin, Cara F. Smith, Balan Ramesh, Jeffery P. Demuth, Esther Betrán, Marc Tollis, Jesse M. Meik, Stephen P. Mackessy, and Todd A. Castoe. [The Origins and Evolution of Chromosomes, Dosage Compensation, and Mechanisms Underlying Venom Regulation in Snakes](https://doi.org/10.1101/gr.240952.118). *Genome Research* 29 (4): 590–601. [<i class="ai ai-doi"></i>https://doi.org/10.1101/gr.240952.118](https://doi.org/10.1101/gr.240952.118). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/SchieldDS_2019_Genome_Res._The_origins_and_evolution_of_chromosomes,_dosage_compensation,_and_mechanisms_underlying_venom_regulation_in_snakes.pdf)
 
@@ -94,4 +96,4 @@ Castoe, Todd A., A. P. Jason de Koning, Kathryn T. Hall, **Daren C. Card**, Drew
 
 
 
-Last Updated: 2019-04-03
+Last Updated: 2019-06-21

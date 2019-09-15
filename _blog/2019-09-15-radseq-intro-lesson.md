@@ -191,6 +191,8 @@ grep -c ">" chr22_sbfI_sau3AI_200_400_output.fasta
 # 952
 ```
 
+## Activity Questions
+
 Within your group, work together to determine how fragment number varies across different fragment size selections. What pattern do you see and why might this be important?
 
 As a class, what do you notice about the number of fragments sampled based on the restriction enzymes and the fragment size windows used? What aspect of the restriction enzyme appears to impact fragment number?

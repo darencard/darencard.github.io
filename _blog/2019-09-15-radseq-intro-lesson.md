@@ -29,13 +29,13 @@ This will take a few minutes to run and along the way, we will answer Yes (y) to
 conda activate radseq
 ```
 
-We must also install some other important software in our environment, namely [Biopython](https://biopython.org/). For whatever reason, installing `biopython` through `conda` is now allowing later software to work for me, so we will install it using `pip` instead, which is built in with Python.
+We must also install some other important software in our environment, namely [Biopython](https://biopython.org/). For whatever reason, installing `biopython` through `conda` is not allowing later software to run properly for me, so we will install it using `pip` instead, which is Python's default package manager.
 
 ```bash
 pip install --user biopython
 ```
 
-We must also install [`bedtools`](https://bedtools.readthedocs.io/en/latest/), which is required for some of our software. This is available on Odyssey already, but let's install into our `radseq` environment to demonstrate how to install using `conda`.
+We must also install [`bedtools`](https://bedtools.readthedocs.io/en/latest/), which is required for some of our software. This is available on Odyssey already, but let's install it into our `radseq` environment to demonstrate how to install using `conda`.
 
 ```bash
 conda install -c bioconda bedtools
@@ -54,7 +54,7 @@ We are also going to be using some software that I wrote for performing *in sili
 git clone https://github.com/darencard/RADis
 ```
 
-One more thing we will need to do is add the software in this repository to our software `$PATH`, which is where the computer looks for software to run by default. Let's do that real quick.
+One more thing we will need to do is add the software in this repository to our software `$PATH`, which is where the computer looks for software to run by default. Note that this is a temporary addition that will not persist beyond this session or if this directory is moved. There are ways to permanently add these software to your `$PATH` that I can show if anyone is interested.
 
 ```bash
 cd RADis
@@ -163,7 +163,7 @@ head chr22_sbfI_sau3AI_200_400_output.bed
 
 The other is a [FASTA](https://en.wikipedia.org/wiki/FASTA_format) file.
 
-```
+```bash
 head chr22_sbfI_sau3AI_200_400_output.fasta
 # >chr22:10520281-10520562(+)
 # ggtggggcttcactggggacccatcaccttccacccaggagcctgtctgcctcccacaaccatccatggcacccaggctgctggcatcaaggggcacttgcaggccagtgccaagccaccctcgtaccccctcatcttcccctcccatgctcctgctcctcagtgtccaaagtccagaaggggctgaggtggcaggggactgacatgtcagcactgcttccaatgtgtgcacacctggctgggcagtgacagcaccctgctgggtcccaaccccactctga

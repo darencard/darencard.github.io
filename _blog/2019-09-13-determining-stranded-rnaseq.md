@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "Determining whether RNA-seq data is stranded"
-date: 2019-09-03
+date: 2019-09-13
 excerpt: "How-to guide on quickly determining whether RNA-seq data is stranded"
 ---
 

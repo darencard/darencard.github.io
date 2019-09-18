@@ -9,6 +9,10 @@ excerpt: "Experimental design activity to accompany an introductory lesson on RA
 
 Today, let's go through a brief experimental design activity to help demonstrate some of the features of RAD-seq and how they can be harnessed to explore numerous questions in ecology, evolutionary biology, and genetics. To perform this activity, we will use Harvard's [Odyssey compute cluster](https://www.rc.fas.harvard.edu/odyssey-3-the-next-generation/).
 
+## Background & Resources
+
+To introduce the topic of RAD-seq, we are relying on the excellent review article by [Andrews *et al.* 2016. *Nature Reviews Genetics*](https://doi.org/10.1038/nrg.2015.28). We are also using [Catchen *et al.* 2013. *Molecular Ecology*](https://doi.org/10.1111/mec.12330) as an empirical example of RAD-seq for discussion. Slides of key figures from these two resources are available [here](https://github.com/darencard/darencard.github.io/raw/master/files/RADseq_introduction.pdf).
+
 ## Setting up Our Analysis Environment
 
 We are going to use the very useful environments feature of [Anaconda Python](https://www.anaconda.com/distribution/) to manage the software dependencies we have for this activity. Anaconda is already installed on Odyssey and can be loaded as follows:

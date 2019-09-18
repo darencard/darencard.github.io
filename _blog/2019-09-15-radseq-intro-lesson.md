@@ -26,13 +26,18 @@ conda create -n radseq python=3.7
 This will take a few minutes to run and along the way, we will answer Yes (y) to allow installation. When it is done, we can activate our newly created environment.
 
 ```bash
-conda activate radseq
+source activate radseq
+# on some systems:
+# conda activate radseq
 ```
 
-We must also install some other important software in our environment, namely [Biopython](https://biopython.org/). For whatever reason, installing `biopython` through `conda` is not allowing later software to run properly for me, so we will install it using `pip` instead, which is Python's default package manager.
+We must also install some other important software in our environment, namely [Biopython](https://biopython.org/). For whatever reason, installing `biopython` through `conda` is not allowing later software to run properly for me, so I have commands for installing via `conda` (preferred) and using `pip` instead, which is Python's default package manager.
 
 ```bash
-pip install --user biopython
+# preferred
+ conda install -c conda-forge biopython 
+# only if conda does not work:
+# pip install --user biopython
 ```
 
 We must also install [`bedtools`](https://bedtools.readthedocs.io/en/latest/), which is required for some of our software. This is available on Odyssey already, but let's install it into our `radseq` environment to demonstrate how to install using `conda`.

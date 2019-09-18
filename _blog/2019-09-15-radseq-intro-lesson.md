@@ -18,7 +18,7 @@ To introduce the topic of RAD-seq, we are relying on the excellent review articl
 Given we cannot run jobs on the login nodes, we are going to start an [interactive job](https://www.rc.fas.harvard.edu/resources/running-jobs/#Interactive_jobs_and_srun) that will allow us to go through this lesson. You can execute the following command to do this. It may take a few minutes to clear the queue, but eventually your prompt should return.
 
 ```bash
-srun -p test --pty -n 2 --mem 4000 -t 0-06:00 /bin/bash
+srun -p test --pty -n 2 --mem 4000 -t 0-06:00 --account=oeb275r /bin/bash
 ```
 
 We are going to use the very useful environments feature of [Anaconda Python](https://www.anaconda.com/distribution/) to manage the software dependencies we have for this activity. Anaconda is already installed on Odyssey and can be loaded as follows:

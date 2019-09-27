@@ -9,7 +9,7 @@ require(grid)
 
 args<-commandArgs(TRUE)
 
-produce_citation_summary <- function(doi_intable, out_imgpath) {
+produce_citation_summary <- function(doi_intable, out_imgpath, out_txtpath) {
   # retrieve citation info for Google Scholar
   google_scholar_id <- "umOwsMAAAAAJ"
   
@@ -93,7 +93,12 @@ produce_citation_summary <- function(doi_intable, out_imgpath) {
   png(out_imgpath, width=6, height=2.5, units="in", res=600)
   grid.arrange(citation_plot, citation_table, nrow=1)
   dev.off()
+
+  # write out a citation summary text file
+  write.table(citation_summary_table, out_txtpath, quote=FALSE,
+              sep="\t", row.names=FALSE)
+
 }
 
-produce_citation_summary(args[1], args[2])
+produce_citation_summary(args[1], args[2], args[3])
 

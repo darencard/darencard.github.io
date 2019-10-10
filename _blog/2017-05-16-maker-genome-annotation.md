@@ -91,7 +91,19 @@ cat Boa_constrictor_SGA_7C_scaffolds.full_mask.complex.gff3 | \
 
 Now we have the prerequesite data for running MAKER.
 
-Update: I find that the repeat element IDs in column 9 of the RepeatMasker GFF3 output could be better. In particular, they only have the element name, which can sometimes be a generic ID from RepeatModeler that gives no family classification information. I wrote a [script](https://github.com/darencard/GenomeAnnotation/blob/master/rmOutToGFF3custom) that produces essentially the same output as above, but with a better ID that includes the repeat family and the element name.
+Update: I find that the repeat element IDs in column 9 of the RepeatMasker GFF3 output could be better. In particular, they only have the element name, which can sometimes be a generic ID from RepeatModeler that gives no family classification information. I wrote a [script](https://github.com/darencard/GenomeAnnotation/blob/master/rmOutToGFF3custom) that produces essentially the same output as above, but with a better ID that includes the repeat family and the element name. You can instead run the following if you are using this script (assumes script is in $PATH).
+
+```bash
+# create GFF3
+rmOutToGFF3custom -o Full_mask/Boa_constrictor_SGA_7C.scaffolds.full_mask.out > Full_mask/Boa_constrictor_SGA_7C.scaffolds.full_mask.out.gff3
+# isolate complex repeats
+grep -v -e "Satellite" -e "Low_complexity" -e "Simple_repeat" Boa_constrictor_SGA_7C_scaffolds.full_mask.gff3 \
+  > Boa_constrictor_SGA_7C_scaffolds.full_mask.complex.gff3
+# reformat to work with MAKER
+cat Boa_constrictor_SGA_7C_scaffolds.full_mask.complex.gff3 | \
+  perl -ane '$id; if(!/^\#/){@F = split(/\t/, $_); chomp $F[-1];$id++; $F[-1] .= "\;ID=$id"; $_ = join("\t", @F)."\n"} print $_' \
+  > Boa_constrictor_SGA_7C_scaffolds.full_mask.complex.reformat.gff3
+```
 
 #### 3. Initial MAKER Analysis
 

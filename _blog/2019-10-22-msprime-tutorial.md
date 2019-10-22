@@ -23,7 +23,7 @@ print(tree_sequence.genotype_matrix())
 
 This script can be saved as the file `msprime_simple.py` and run simply using the command `python msprime_simple.py` (assuming `msprime` is properly installed).
 
-We also ran through a second, more complex example with a 4-tip tree with a migration event between tips 1 and 3. Here is an image of the tree model we were considering. The image should be rotated clockwise 90 degrees but GitHub is not cooperating properly to do that, so please pardon that issue.
+We also ran through a second, more complex example with a 4-tip tree with a migration event between tips 1 and 3. Here is an image of the tree model we were considering. The image should be rotated counterclockwise 90 degrees but GitHub is not cooperating properly to do that, so please pardon that issue.
 
 ![msprime model](https://github.com/darencard/darencard.github.io/raw/master/assets/images/blog/msprime_model.jpg)
 
@@ -128,4 +128,4 @@ tree_sequence=introgression_simulation(length, mutation_rate, recombination_rate
 print(treePrinter(tree_sequence))
 ```
 
-his script can be saved as the file `msprime_migration.py` and run simply using the command `python msprime_migration.py` (assuming `msprime` is properly installed).
+This script can be saved as the file `msprime_migration.py` and run simply using the command `python msprime_migration.py` (assuming `msprime` is properly installed).

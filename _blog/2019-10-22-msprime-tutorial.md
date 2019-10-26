@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "A Brief Introduction to msprime"
-date: 2019-09-27
+date: 2019-10-22
 excerpt: "Notes from a quick introduction session I attended on msprime"
 ---
 

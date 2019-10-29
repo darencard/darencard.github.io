@@ -14,6 +14,10 @@ header:
 
 ![Citation Summary](/assets/images/publications/citation_summary.png)
 
+## In Press
+
+**Card, Daren C.**, Richard H. Adams, Drew R. Schield, Blair W. Perry, Andrew B. Corbin, Giulia I. M. Pasquesi, Kristopher Row, Melissa J. Van Kleeck, Juan M. Daza, Warren Booth, Chad E. Montgomery, Scott M. Boback, and Todd A. Castoe. Genomic basis of convergent island phenotypes in boa constrictors. *Genome Biology & Evolution*.
+
 ## 2019
 
 Lamichhaney, Sangeet, **Daren C. Card**, Phil Grayson, Tonini, Gustavo A. Bravo, Kathrin Näpflin, Flavia Termignoni-Garcia, Christopher Torres, Frank Burbrink, Julia A. Clarke, Timothy B. Sackton, and Scott V. Edwards. [Integrating Natural History Collections and Comparative Genomics to Study the Genetic Architecture of Convergent Evolution](https://doi.org/10.1098/rstb.2018.0248). *Philosophical Transactions of the Royal Society B: Biological Sciences* 374 (1777): 20180248. [<i class="ai ai-doi"></i>https://doi.org/10.1098/rstb.2018.0248](https://doi.org/10.1098/rstb.2018.0248). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/LamichhaneySL_2019_Philosophical_Transactions_of_the_Royal_Society_B_Biological_Sciences_Integrating_natural_history_collections_and_comparative_genomics_to_study_the_genetic_architecture_of_convergent_evolution.pdf)

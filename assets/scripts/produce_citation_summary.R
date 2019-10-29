@@ -29,14 +29,15 @@ produce_citation_summary <- function(doi_intable, out_imgpath, out_txtpath) {
     doi_tbl$Cites <- cite_vec
     
     citations <- doi_tbl[order(doi_tbl$Cites,decreasing=TRUE),]
-    citations <- cbind(id=rownames(citations),citations)
-    citations$id<- as.character(citations$id)
-    citations$id<- as.numeric(citations$id)
+    # citations <- cbind(id=rownames(citations),citations)
+    # citations$id<- as.character(citations$id)
+    # citations$id<- as.numeric(citations$id)
     
     pub_count <- nrow(citations)
     total_cites <- sum(citations$Cites)
     i10_index <- citations %>% filter(Cites >= 10) %>% nrow()
-    h_index <- max(which(citations$id<=citations$Cites))
+    h_index <- tail(which(citations$Cites >= seq_along(citations$Cites)), 1)
+      # max(which(citations$id<=citations$Cites))
     
     profile <- list(
       "pub_count"=pub_count,

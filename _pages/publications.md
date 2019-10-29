@@ -16,6 +16,8 @@ header:
 
 ## 2019
 
+**Card, Daren C.**, Richard H. Adams, Drew R. Schield, Blair W. Perry, Andrew B. Corbin, Giulia I. M. Pasquesi, Kristopher Row, Melissa J. Van Kleeck, Juan M. Daza, Warren Booth, Chad E. Montgomery, Scott M. Boback, and Todd A. Castoe. [Genomic Basis of Convergent Island Phenotypes in Boa Constrictors](https://doi.org/10.1093/gbe/evz226). *Genome Biology and Evolution*, October. [<i class="ai ai-doi"></i>https://doi.org/10.1093/gbe/evz226](https://doi.org/10.1093/gbe/evz226). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/CardDC_Genome_Biol_Evol_Genomic_basis_of_convergent_island_phenotypes_in_boa_constrictors.pdf)
+
 Lamichhaney, Sangeet, **Daren C. Card**, Phil Grayson, Tonini, Gustavo A. Bravo, Kathrin Näpflin, Flavia Termignoni-Garcia, Christopher Torres, Frank Burbrink, Julia A. Clarke, Timothy B. Sackton, and Scott V. Edwards. [Integrating Natural History Collections and Comparative Genomics to Study the Genetic Architecture of Convergent Evolution](https://doi.org/10.1098/rstb.2018.0248). *Philosophical Transactions of the Royal Society B: Biological Sciences* 374 (1777): 20180248. [<i class="ai ai-doi"></i>https://doi.org/10.1098/rstb.2018.0248](https://doi.org/10.1098/rstb.2018.0248). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/LamichhaneySL_2019_Philosophical_Transactions_of_the_Royal_Society_B_Biological_Sciences_Integrating_natural_history_collections_and_comparative_genomics_to_study_the_genetic_architecture_of_convergent_evolution.pdf)
 
 Perry, Blair W., Audra L. Andrew, Abu Hena Mostafa Kamal, **Daren C. Card**, Drew R. Schield, Giulia I. M. Pasquesi, Mark W. Pellegrino, Stephen P. Mackessy, Saiful M. Chowdhury, Stephen M. Secor, and Todd A. Castoe. [Multi-Species Comparisons of Snakes Identify Coordinated Signalling Networks Underlying Post-Feeding Intestinal Regeneration](https://doi.org/10.1098/rspb.2019.0910). *Proceedings of the Royal Society B: Biological Sciences* 286 (1906): 20190910. [<i class="ai ai-doi"></i>https://doi.org/10.1098/rspb.2019.0910](https://doi.org/10.1098/rspb.2019.0910). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/PerryBP_2019_Proceedings_of_the_Royal_Society_B_Biological_Sciences_Multi-species_comparisons_of_snakes_identify_coordinated_signalling_networks_underlying_post-feeding_intestinal_regeneration.pdf)
@@ -98,4 +100,4 @@ Castoe, Todd A., A. P. Jason de Koning, Kathryn T. Hall, **Daren C. Card**, Drew
 
 
 
-Last Updated: 2019-10-28
+Last Updated: 2019-10-29

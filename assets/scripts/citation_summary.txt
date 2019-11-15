@@ -1,4 +1,4 @@
 Google.Scholar	CrossRef
-778	590
-22	18
-15	14
+793	597
+23	18
+16	14

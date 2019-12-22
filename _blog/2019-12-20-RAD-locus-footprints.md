@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "Identifying genome-wide RAD-seq loci"
-date: 2019-10-26
+date: 2019-12-26
 excerpt: "A useful script for identifying the footprints of RAD-seq loci from read mappings"
 ---
 

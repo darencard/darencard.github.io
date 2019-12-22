@@ -108,6 +108,8 @@ tail -n +2 GCF_000090745.1_AnoCar2.0_protein_table.txt | sort -k9,9nr | sort -ut
 
 We can easily pipe all of these commands together to produced the processed FASTA protein files that we need to run `OrthoMCL`. Let's say we have our protein FASTA files (i.e., `_protein.faa`) and our annotation data (stored with a `_protein_table.txt` suffix) stored in a directory called `raw` in our working directory. `OrthoMCL` will run on all FASTA files in a specified directory, so let's write our processed protein FASTAs to a new directory called `processed` with the extension `.fasta` (required by `OrthoMCL`).
 
+Note: The annotation data file (stored with a `_protein_table.txt` suffix) is obtained from NCBI. To retrieve those data, you must go to the genome page for a given organism assembly and you will see a link to download the genome annotation in "tabular" format near the top of the page. If you follow that link, you are brought to a table rendered in the browser. You can easily download this to a text file (and rename accordingly) by clicking the "Download Table" link near the top, right of the page. The genome page for *Anolis carolinensis* is found [here](https://www.ncbi.nlm.nih.gov/genome?LinkName=assembly_genome&from_uid=249188) and the direct link to the protein table is [here](https://www.ncbi.nlm.nih.gov/genome/proteins/708?genome_assembly_id=30616).
+
 ```
 # directory structure
 --/path/to/working/directory
@@ -123,7 +125,7 @@ tail -n +2 raw/GCF_000090745.1_AnoCar2.0_protein_table.txt | \
 sort -k9,9nr | sort -ut $'\t' -k6,6 | cut -f 8 | \
 seqkit grep -f - raw/GCF_000090745.1_AnoCar2.0_protein.faa | \
 seqkit seq -m 50 | bioawk -c fastx '{ print ">Acar|"$name; print $seq }' \
-> /processed/Acar.fasta
+> processed/Acar.fasta
 ```
 
 And here are the commands I used for all 5 samples (note that the processing for the *Boa* genome is simpler because we don't have issues with isoforms like we do with the NCBI genomes). In each case I'm using 4 letter `organism_ID` prefixes.

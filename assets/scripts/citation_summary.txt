@@ -1,4 +1,4 @@
 Google.Scholar	CrossRef
-823	618
-23	20
-16	14
+853	632
+23	19
+17	14

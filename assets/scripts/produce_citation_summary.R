@@ -77,6 +77,7 @@ produce_citation_summary <- function(doi_intable, out_imgpath, out_txtpath) {
   upper <- roundUpNice(max(cite_history$cites))
   
   citation_plot <- cite_history %>%
+    filter(year >= 2015) %>%
     ggplot(aes(x=year, y=cites)) + 
     geom_bar(stat="identity", fill="#0395DE") +
     geom_text(aes(label=cites), 

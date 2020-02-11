@@ -83,7 +83,7 @@ produce_citation_summary <- function(doi_intable, out_imgpath, out_txtpath) {
     geom_text(aes(label=cites), 
               position=position_dodge(width=0.9), vjust=-0.5,
               size=4) +
-    scale_y_continuous(limits=c(0, max(cite_history$cites)+10)) +
+    scale_y_continuous(limits=c(0, max(cite_history$cites)+20)) +
     scale_x_continuous(breaks=cite_history$year) +
     labs(x="Year", y="Citations") +
     theme_minimal(base_size=16) +

@@ -1,4 +1,4 @@
 Google.Scholar	CrossRef
-867	651
-23	20
-17	14
+915	692
+26	22
+18	15

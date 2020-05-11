@@ -248,15 +248,23 @@ hmm-assembler.pl Bcon_rnd1.zff.length50_aed0.25 params > Bcon_rnd1.zff.length50_
 
 Training Augustus is a more laborious process. Luckily, the recent release of `BUSCO` provides a nice pipeline for performing the training, while giving you an idea of how good your annotation already is. If you don't want to go this route, there are scripts provided with Augustus to perform the training. First, the `Parallel::ForkManager` module for Perl is required to run `BUSCO` with more than one core. You can easily install it before the first time you use `BUSCO` by running `sudo apt-get install libparallel-forkmanager-perl`.
 
-This probably isn't an ideal training environment, but appears to work well. First, we must put together training sequences using the gene models we created in our first run of MAKER. We do this by issuing the following command to excise the regions that contain mRNA annotations based on our initial MAKER run (with 1000bp on each side).
+This probably isn't an ideal training environment, but appears to work well. First, we must put together training sequences using the gene models we created in our first run of MAKER. We do this by issuing the following command to excise the regions that contain mRNA annotations based on our initial MAKER run (with up to 1000bp on each side).
 
 ```bash
+# be sure your reference genome is indexed with samtools (.fai file is present)
 awk -v OFS="\t" '{ if ($3 == "mRNA") print $1, $4, $5 }' ../../Bcon_rnd1.maker.output/Bcon_rnd1.all.maker.noseq.gff | \
-  awk -v OFS="\t" '{ if ($2 < 1000) print $1, "0", $3+1000; else print $1, $2-1000, $3+1000 }' | \
+  while read rna; \
+  do \
+  scaffold=`echo ${rna} | awk '{ print $1 }'`; \
+  end=`cat ../../Boa_constrictor_SGA_7C_scaffolds.fa.fai | awk -v scaffold="${scaffold}" \
+    -v OFS="\t" '{ if ($1 == scaffold) print $2 }'`; \
+  echo ${rna} | awk -v end="${end}" -v OFS="\t" '{ if ($2 < 1000 && (end - $3) < 1000) print $1, "0", end; \
+    else if ((end - $3) < 1000) print $1, "0", end; \
+    else if ($2 < 1000) print $1, "0", $3+1000; \
+    else print $1, $2-1000, $3+1000 }'; \
+  done | \
   bedtools getfasta -fi ../../Boa_constrictor_SGA_7C_scaffolds.fa -bed - -fo Bcon_rnd1.all.maker.transcripts1000.fasta
 ```
-
-There are some important things to note based on this approach. First is that you will likely get warnings from BEDtools that certain coordinates could not be used to extract FASTA sequences. This is because the end coordinate of a transcript plus 1000 bp is beyond the total length of a given scaffold. This script does account for transcripts being within the beginning 1000bp of the scaffold, but there was no easy way to do the same with transcrpts within the last 1000bp of the scaffold. This is okay, however, as we still end up with sequences from thousands of gene models and BUSCO will only be searching for a small subset of genes itself.
 
 While we've only provided sequences from regions likely to contain genes, we've totally eliminated any existing annotation data about the starts/stops of gene elements. Augustus would normally use this as part of the training process. However, BUSCO will essentially do a reannotation of these regions using BLAST and built-in HMMs for a set of conserved genes (hundreds to thousands). This has the effect of recreating some version of our gene models for these conserved genes. We then leverage the internal training that BUSCO can perform (the `--long` argument) to optimize the HMM search model to train Augustus and produce a trained HMM for MAKER. Here is the command we use to perform the Augustus training inside BUSCO.
 

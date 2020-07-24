@@ -328,4 +328,29 @@ augustus --species=myspecies vertebrata_odb10.info.ranked.complete.nonredundant.
 
 ```bash
 grep -A 22 Evaluation augustus_trained.out
+# *******      Evaluation of gene prediction     *******
+#
+# ---------------------------------------------\
+#                  | sensitivity | specificity |
+# ---------------------------------------------|
+# nucleotide level |       0.915 |       0.934 |
+# ---------------------------------------------/
+#
+# ----------------------------------------------------------------------------------------------------------\
+#            |  #pred |  #anno |      |    FP = false pos. |    FN = false neg. |             |             |
+#            | total/ | total/ |   TP |--------------------|--------------------| sensitivity | specificity |
+#            | unique | unique |      | part | ovlp | wrng | part | ovlp | wrng |             |             |
+# ----------------------------------------------------------------------------------------------------------|
+#            |        |        |      |                885 |               1322 |             |             |
+# exon level |   5559 |   5996 | 4674 | ------------------ | ------------------ |        0.78 |       0.841 |
+#            |   5559 |   5996 |      |  488 |   19 |  378 |  496 |   26 |  800 |             |             |
+# ----------------------------------------------------------------------------------------------------------/
+#
+# ----------------------------------------------------------------------------\
+# transcript | #pred | #anno |   TP |   FP |   FN | sensitivity | specificity |
+# ----------------------------------------------------------------------------|
+# gene level |   514 |   497 |   52 |  462 |  445 |       0.105 |       0.101 |
+# ----------------------------------------------------------------------------/
 ```
+
+My optimization took under 48 hours using the 24 cores I provided in the above command. For comparison, when I used this same dataset and ran BUSCO with the optimization step activated, which would do the training with all complete BUSCOs, it had run over 10 days on 32 cores and still had not completed. Given this took about 3 days of collective work, this is quite a time savings. Though in looking at the results, the optimization led to very modest differences in sensitivity and specificity, which I'll have to explore more (maybe that will be a topic for a later post).

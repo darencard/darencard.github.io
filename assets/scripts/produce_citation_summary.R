@@ -10,13 +10,28 @@ require(grid)
 args<-commandArgs(TRUE)
 
 produce_citation_summary <- function(doi_intable, out_imgpath, out_txtpath) {
-  # retrieve citation info for Google Scholar
-  google_scholar_id <- "umOwsMAAAAAJ"
   
-  scholar_profile <- get_profile(google_scholar_id)
-  
-  # retrieve citation info for CrossRef
-  dcc_doi <- read.table(doi_intable, header=TRUE, stringsAsFactors=FALSE)
+  get_scholar_profile <- function(google_scholar_id) {
+    citations <- get_publications(google_scholar_id, pagesize=500)
+    
+    pub_count <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% nrow()
+    total_cites <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% pull(cites) %>% sum()
+    i10_index <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% filter(cites >= 10) %>% nrow()
+    h_index <- tail(which(citations$cites >= seq_along(citations$cites)), 1)
+    mean <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% pull(cites) %>% mean(na.rm=TRUE)
+    median <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% pull(cites) %>% median(na.rm=TRUE)
+    
+    profile <- list(
+      "pub_count"=pub_count,
+      "total_cites"=total_cites,
+      "i10_index"=i10_index,
+      "h_index"=h_index,
+      "mean"=mean,
+      "median"=median
+    )
+    
+    return(profile)
+  }
   
   get_crossref_profile <- function(doi_tbl) {
     cite_vec <- NULL
@@ -37,29 +52,48 @@ produce_citation_summary <- function(doi_intable, out_imgpath, out_txtpath) {
     total_cites <- sum(citations$Cites)
     i10_index <- citations %>% filter(Cites >= 10) %>% nrow()
     h_index <- tail(which(citations$Cites >= seq_along(citations$Cites)), 1)
+    mean <- mean(citations$Cites, na.rm=TRUE)
+    median <- median(citations$Cites, na.rm=TRUE)
       # max(which(citations$id<=citations$Cites))
     
     profile <- list(
       "pub_count"=pub_count,
       "total_cites"=total_cites,
       "i10_index"=i10_index,
-      "h_index"=h_index
+      "h_index"=h_index,
+      "mean"=mean,
+      "median"=median
     )
     
     return(profile)
   }
   
+  # retrieve citation info for Google Scholar
+  google_scholar_id <- "umOwsMAAAAAJ"
+  
+  scholar_profile <- get_scholar_profile(google_scholar_id)
+  
+  # retrieve citation info for CrossRef
+  dcc_doi <- read.table(doi_intable, header=TRUE, stringsAsFactors=FALSE)
+  
   crossref_profile <- get_crossref_profile(dcc_doi)
   
   # create full citation table
   citation_summary_table <- data.frame(
-    "Google Scholar"=c(scholar_profile$total_cites,
+    "Google Scholar"=c(scholar_profile$pub_count,
+                       scholar_profile$total_cites,
                        scholar_profile$i10_index,
-                       scholar_profile$h_index),
-    "CrossRef"=c(crossref_profile$total_cites,
+                       scholar_profile$h_index,
+                       scholar_profile$mean,
+                       scholar_profile$median),
+    "CrossRef"=c(crossref_profile$pub_count,
+                 crossref_profile$total_cites,
                  crossref_profile$i10_index,
-                 crossref_profile$h_index),
-    row.names=c("Total Citations", "i10 Index", "H Index")
+                 crossref_profile$h_index,
+                 crossref_profile$mean,
+                 crossref_profile$median),
+    row.names=c("Publication Count", "Total Citations", "i10 Index", 
+                "H Index", "Mean", "Median")
   )
   
   citation_table <- tableGrob(citation_summary_table, 

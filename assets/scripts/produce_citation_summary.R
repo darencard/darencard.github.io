@@ -18,7 +18,7 @@ produce_citation_summary <- function(doi_intable, out_imgpath, out_txtpath) {
     total_cites <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% pull(cites) %>% sum()
     i10_index <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% filter(cites >= 10) %>% nrow()
     h_index <- tail(which(citations$cites >= seq_along(citations$cites)), 1)
-    mean <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% pull(cites) %>% mean(na.rm=TRUE)
+    mean <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% pull(cites) %>% mean(na.rm=TRUE) %>% round(digits=1)
     median <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% pull(cites) %>% median(na.rm=TRUE)
     
     profile <- list(
@@ -52,7 +52,7 @@ produce_citation_summary <- function(doi_intable, out_imgpath, out_txtpath) {
     total_cites <- sum(citations$Cites)
     i10_index <- citations %>% filter(Cites >= 10) %>% nrow()
     h_index <- tail(which(citations$Cites >= seq_along(citations$Cites)), 1)
-    mean <- mean(citations$Cites, na.rm=TRUE)
+    mean <- round(mean(citations$Cites, na.rm=TRUE), digits=1)
     median <- median(citations$Cites, na.rm=TRUE)
       # max(which(citations$id<=citations$Cites))
     

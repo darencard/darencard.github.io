@@ -82,18 +82,18 @@ produce_citation_summary <- function(doi_intable, out_imgpath, out_txtpath) {
   citation_summary_table <- data.frame(
     "Google Scholar"=c(scholar_profile$pub_count,
                        scholar_profile$total_cites,
-                       scholar_profile$i10_index,
-                       scholar_profile$h_index,
                        scholar_profile$mean,
-                       scholar_profile$median),
+                       scholar_profile$median,
+                       scholar_profile$i10_index,
+                       scholar_profile$h_index),
     "CrossRef"=c(crossref_profile$pub_count,
                  crossref_profile$total_cites,
-                 crossref_profile$i10_index,
-                 crossref_profile$h_index,
                  crossref_profile$mean,
-                 crossref_profile$median),
-    row.names=c("Publication Count", "Total Citations", "i10 Index", 
-                "H Index", "Mean", "Median")
+                 crossref_profile$median,
+                 crossref_profile$i10_index,
+                 crossref_profile$h_index),
+    row.names=c("Publication Count", "Total Citations", "Mean", "Median", "i10 Index", 
+                "H Index")
   )
   
   citation_table <- tableGrob(citation_summary_table, 
@@ -131,7 +131,8 @@ produce_citation_summary <- function(doi_intable, out_imgpath, out_txtpath) {
   dev.off()
 
   # write out a citation summary text file
-  write.table(citation_summary_table, out_txtpath, quote=FALSE,
+  write.table(citation_summary_table %>% rownames_to_column("Metric"), 
+              out_txtpath, quote=FALSE,
               sep="\t", row.names=FALSE)
 
 }

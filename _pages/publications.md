@@ -14,6 +14,10 @@ header:
 
 ![Citation Summary](/assets/images/publications/citation_summary.png)
 
+## 2021
+
+**Card, Daren C.**, Freek J. Vonk, Sterrin Smalbrugge, Nicholas R. Casewell, Wolfgang Wüster, Todd A. Castoe, Gordon W. Schuett, and Warren Booth. [Genome-Wide Data Implicate Terminal Fusion Automixis in King Cobra Facultative Parthenogenesis](https://doi.org/10.1038/s41598-021-86373-1). *Scientific Reports* 11 (1): 7271. [<i class="ai ai-doi"></i>https://doi.org/10.1038/s41598-021-86373-1](https://doi.org/10.1038/s41598-021-86373-1). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/CardDC_2021_G_enome-wide_data_implicate_terminal_fusion_automixis_in_king_cobra_facultative.pdf)
+
 ## 2020
 
 Kazi, Misha I., Blair W. Perry, **Daren C. Card**, Richard D. Schargel, Hana B. Ali, Victor C. Obuekwe, Madhab Sapkota, Katie N. Kang, Mark W. Pellegrino, David E. Greenberg, Todd A. Castoe, and Joseph M. Boll. [Discovery and Characterization of New Delhi Metallo-β-Lactamase-1 Inhibitor Peptides That Potentiate Meropenem-Dependent Killing of Carbapenemase-Producing Enterobacteriaceae](https://doi.org/10.1093/jac/dkaa242). *Journal of Antimicrobial Chemotherapy*. [<i class="ai ai-doi"></i>https://doi.org/10.1093/jac/dkaa242](https://doi.org/10.1093/jac/dkaa242). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/KaziMK_J_Antimicrob_Chemother_Discovery_and_characterization_of_New_Delhi_metallo-β-lactamase-1_inhibitor.pdf)
@@ -56,7 +60,7 @@ Adams, Richard H., Drew R. Schield, **Daren C. Card**, Andrew Corbin, and Todd A
 
 Hales, Nicole R., Drew R. Schield, Audra L. Andrew, **Daren C. Card**, Matthew R. Walsh, and Todd A. Castoe. [Contrasting Gene Expression Programs Correspond with Predator-Induced Phenotypic Plasticity Within and Across Generations in Daphnia](https://doi.org/10.1111/mec.14213). *Molecular Ecology* 26 (19): 5003–15. [<i class="ai ai-doi"></i>https://doi.org/10.1111/mec.14213](https://doi.org/10.1111/mec.14213). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/HalesNH_2017_Mol_Ecol_Contrasting_gene_expression_programs_correspond_with_predator-induced_phenotypic_plasticity_within_and_across_generations_in_Daphnia.pdf)
 
-Gamble, Tony, Todd A. Castoe, Stuart V. Nielsen, Jaison L. Banks, **Daren C. Card**, Drew R. Schield, Gordon W. Schuett, and Warren Booth. [The Discovery of XY Sex Chromosomes in a Boa and Python](https://doi.org/10.1016/j.cub.2017.06.010). *Current Biology* 27 (14): 2148–2153.e4. [<i class="ai ai-doi"></i>https://doi.org/10.1016/j.cub.2017.06.010](https://doi.org/10.1016/j.cub.2017.06.010). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/GambleTG_2017_Current_Biology_The_Discovery_of_XY_Sex_Chromosomes_in_a_Boa_and_Python.pdf)
+Gamble, Tony, Todd A. Castoe, Stuart V. Nielsen, Jaison L. Banks, **Daren C. Card**, Drew R. Schield, Gordon W. Schuett, and Warren Booth. [The Discovery of XY Sex Chromosomes in a Boa and Python](https://doi.org/10.1016/j.cub.2017.06.010). *Current Biology* 27 (14): 2148–53. [<i class="ai ai-doi"></i>https://doi.org/10.1016/j.cub.2017.06.010](https://doi.org/10.1016/j.cub.2017.06.010). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/GambleTG_2017_Current_Biology_The_Discovery_of_XY_Sex_Chromosomes_in_a_Boa_and_Python.pdf)
 
 Lotterhos, Katie E., **Daren C. Card**, Sara M. Schaal, Liuyang Wang, Caitlin Collins, and Bob Verity. [Composite Measures of Selection Can Improve the Signal-to-Noise Ratio in Genome Scans](https://doi.org/10.1111/2041-210X.12774). *Methods in Ecology and Evolution* 8 (6): 717–27. [<i class="ai ai-doi"></i>https://doi.org/10.1111/2041-210X.12774](https://doi.org/10.1111/2041-210X.12774). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/LotterhosKL_2017_Methods_Ecol_Evol_Composite_measures_of_selection_can_improve_the_signal-to-noise_ratio_in_genome_scans.pdf)
 
@@ -108,4 +112,4 @@ Castoe, Todd A., A. P. Jason de Koning, Kathryn T. Hall, **Daren C. Card**, Drew
 
 
 
-Last Updated: 2021-02-14
+Last Updated: 2021-04-21

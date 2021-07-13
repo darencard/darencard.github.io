@@ -18,9 +18,11 @@ header:
 
 **Card, Daren C.**, Freek J. Vonk, Sterrin Smalbrugge, Nicholas R. Casewell, Wolfgang Wüster, Todd A. Castoe, Gordon W. Schuett, and Warren Booth. [Genome-Wide Data Implicate Terminal Fusion Automixis in King Cobra Facultative Parthenogenesis](https://doi.org/10.1038/s41598-021-86373-1). *Scientific Reports* 11 (1): 7271. [<i class="ai ai-doi"></i>https://doi.org/10.1038/s41598-021-86373-1](https://doi.org/10.1038/s41598-021-86373-1). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/CardDC_2021_G_enome-wide_data_implicate_terminal_fusion_automixis_in_king_cobra_facultative.pdf)
 
+Farleigh, Keaka, Sarah A. Vladimirova, Christopher Blair, Jason T. Bracken, Nazila Koochekian, Drew R. Schield, **Daren C. Card**, Nicholas Finger, Jonathan Henault, Adam D. Leaché, Todd A. Castoe, and Tereza Jezkova. [The Effects of Climate and Demographic History in Shaping Genomic Variation Across Populations of the Desert Horned Lizard (Phrynosoma Platyrhinos)](https://doi.org/10.1111/mec.16070). *Molecular Ecology* n/a (n/a). [<i class="ai ai-doi"></i>https://doi.org/10.1111/mec.16070](https://doi.org/10.1111/mec.16070). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/FarleighKF_2021_The_effects_of_climate_and_demographic_history_in_shaping_genomic_variation.pdf)
+
 ## 2020
 
-Kazi, Misha I., Blair W. Perry, **Daren C. Card**, Richard D. Schargel, Hana B. Ali, Victor C. Obuekwe, Madhab Sapkota, Katie N. Kang, Mark W. Pellegrino, David E. Greenberg, Todd A. Castoe, and Joseph M. Boll. [Discovery and Characterization of New Delhi Metallo-β-Lactamase-1 Inhibitor Peptides That Potentiate Meropenem-Dependent Killing of Carbapenemase-Producing Enterobacteriaceae](https://doi.org/10.1093/jac/dkaa242). *Journal of Antimicrobial Chemotherapy*. [<i class="ai ai-doi"></i>https://doi.org/10.1093/jac/dkaa242](https://doi.org/10.1093/jac/dkaa242). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/KaziMK_J_Antimicrob_Chemother_Discovery_and_characterization_of_New_Delhi_metallo-β-lactamase-1_inhibitor.pdf)
+Kazi, Misha I., Blair W. Perry, **Daren C. Card**, Richard D. Schargel, Hana B. Ali, Victor C. Obuekwe, Madhab Sapkota, Katie N. Kang, Mark W. Pellegrino, David E. Greenberg, Todd A. Castoe, and Joseph M. Boll. [Discovery and Characterization of New Delhi Metallo-*β*-Lactamase-1 Inhibitor Peptides That Potentiate Meropenem-Dependent Killing of Carbapenemase-Producing Enterobacteriaceae](https://doi.org/10.1093/jac/dkaa242). *Journal of Antimicrobial Chemotherapy*. [<i class="ai ai-doi"></i>https://doi.org/10.1093/jac/dkaa242](https://doi.org/10.1093/jac/dkaa242). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/KaziMK_J_Antimicrob_Chemother_Discovery_and_characterization_of_New_Delhi_metallo-β-lactamase-1_inhibitor.pdf)
 
 ## 2019
 
@@ -54,7 +56,7 @@ Schott, Ryan K., Alexander Van Nynatten, **Daren C. Card**, Todd A. Castoe, and 
 
 **Card, Daren C.**, Drew R. Schield, and Todd A. Castoe. [Plasticity and Local Adaptation Explain Lizard Cold Tolerance](https://doi.org/10.1111/mec.14575). *Molecular Ecology* 27 (9): 2173–5. [<i class="ai ai-doi"></i>https://doi.org/10.1111/mec.14575](https://doi.org/10.1111/mec.14575). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/CardDC_2018_Molecular_Ecology_Plasticity_and_local_adaptation_explain_lizard_cold_tolerance.pdf)
 
-Adams, Richard H., Drew R. Schield, **Daren C. Card**, Andrew Corbin, and Todd A. Castoe. [ThetaMater: Bayesian Estimation of Population Size Parameter θ from Genomic Data](https://doi.org/10.1093/bioinformatics/btx733). *Bioinformatics* 34 (6): 1072–3. [<i class="ai ai-doi"></i>https://doi.org/10.1093/bioinformatics/btx733](https://doi.org/10.1093/bioinformatics/btx733). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/AdamsRA_2018_Bioinformatics_ThetaMater_-_Bayesian_estimation_of_population_size_parameter_θ_from_genomic_data.pdf)
+Adams, Richard H., Drew R. Schield, **Daren C. Card**, Andrew Corbin, and Todd A. Castoe. [ThetaMater: Bayesian Estimation of Population Size Parameter from Genomic Data](https://doi.org/10.1093/bioinformatics/btx733). *Bioinformatics* 34 (6): 1072–3. [<i class="ai ai-doi"></i>https://doi.org/10.1093/bioinformatics/btx733](https://doi.org/10.1093/bioinformatics/btx733). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/AdamsRA_2018_Bioinformatics_ThetaMater_-_Bayesian_estimation_of_population_size_parameter_θ_from_genomic_data.pdf)
 
 ## 2017
 
@@ -112,4 +114,4 @@ Castoe, Todd A., A. P. Jason de Koning, Kathryn T. Hall, **Daren C. Card**, Drew
 
 
 
-Last Updated: 2021-04-21
+Last Updated: 2021-07-13

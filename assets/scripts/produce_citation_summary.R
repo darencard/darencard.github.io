@@ -14,12 +14,14 @@ produce_citation_summary <- function(doi_intable, out_imgpath, out_txtpath) {
   get_scholar_profile <- function(google_scholar_id) {
     citations <- get_publications(google_scholar_id, pagesize=500)
     
-    pub_count <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% nrow()
-    total_cites <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% pull(cites) %>% sum()
-    i10_index <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% filter(cites >= 10) %>% nrow()
+    rm_dissertation <- "Using Snake Genomes to Illuminate the Patterns and Mechanisms of Rapid Adaptation"
+    
+    pub_count <- citations %>% filter(title!=rm_dissertation) %>% nrow()
+    total_cites <- citations %>% filter(title!=rm_dissertation) %>% pull(cites) %>% sum()
+    i10_index <- citations %>% filter(title!=rm_dissertation) %>% filter(cites >= 10) %>% nrow()
     h_index <- tail(which(citations$cites >= seq_along(citations$cites)), 1)
-    mean <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% pull(cites) %>% mean(na.rm=TRUE) %>% round(digits=1)
-    median <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% pull(cites) %>% median(na.rm=TRUE)
+    mean <- citations %>% filter(title!=rm_dissertation) %>% pull(cites) %>% mean(na.rm=TRUE) %>% round(digits=1)
+    median <- citations %>% filter(title!=rm_dissertation) %>% pull(cites) %>% median(na.rm=TRUE)
     
     profile <- list(
       "pub_count"=pub_count,
@@ -71,7 +73,7 @@ produce_citation_summary <- function(doi_intable, out_imgpath, out_txtpath) {
   # retrieve citation info for Google Scholar
   google_scholar_id <- "umOwsMAAAAAJ"
   
-  scholar_profile <- get_profile(google_scholar_id)
+  scholar_profile <- get_scholar_profile(google_scholar_id)
   
   # retrieve citation info for CrossRef
   dcc_doi <- read.table(doi_intable, header=TRUE, stringsAsFactors=FALSE)

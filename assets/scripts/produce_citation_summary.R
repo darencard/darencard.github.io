@@ -71,7 +71,7 @@ produce_citation_summary <- function(doi_intable, out_imgpath, out_txtpath) {
   # retrieve citation info for Google Scholar
   google_scholar_id <- "umOwsMAAAAAJ"
   
-  scholar_profile <- get_scholar_profile(google_scholar_id)
+  scholar_profile <- get_profile(google_scholar_id)
   
   # retrieve citation info for CrossRef
   dcc_doi <- read.table(doi_intable, header=TRUE, stringsAsFactors=FALSE)

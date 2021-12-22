@@ -5,6 +5,12 @@ date: 2017-05-16
 excerpt: "Thorough guide for performing genome annotation using MAKER."
 ---
 
+2021-12-22 update: I have been surprised and pleased by the wide adoption of the below approach for genome annotation using MAKER! I hope others are finding this resource useful and I try to provide some support, though almost all inquries I get are for issues with software that are best addressed by the researchers who support that software (I cannot provide support for installation issues or running warnings/errors). If you find this protocol useful and would like to cite it in papers, etc., please cite the following paper that includes my annotation of the *Boa constrictor* genome, which is what the below guide outlines.
+
+Card, Daren C., Richard H. Adams, Drew R. Schield, Blair W. Perry, Andrew B. Corbin, Giulia I. M. Pasquesi, Kristopher Row, Melissa J. Van Kleeck, Juan M. Daza, Warren Booth, Chad E. Montgomery, Scott M. Boback, and Todd A. Castoe. [Genomic Basis of Convergent Island Phenotypes in Boa Constrictors](https://doi.org/10.1093/gbe/evz226). *Genome Biology and Evolution* 11 (11): 3123–43. [https://doi.org/10.1093/gbe/evz226](https://doi.org/10.1093/gbe/evz226).
+
+## Introduction
+
 [MAKER](http://www.yandell-lab.org/software/maker.html) is a great tool for annotating a reference genome using empirical and *ab initio* gene predictions. [GMOD](http://gmod.org/wiki/Main_Page), the umbrella organization that includes MAKER, has some nice tutorials online for running MAKER. However, these were quite simplified examples and it took a bit of effort to wrap my head completely around everything. Here I will describe a *de novo* genome annotation for *Boa constrictor* in detail, so that there is a record and that it is easy to use this as a guide to annotate any genome.
 
 ## Software & Data

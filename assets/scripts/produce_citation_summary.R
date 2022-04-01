@@ -128,7 +128,7 @@ produce_citation_summary <- function(doi_intable, out_imgpath, out_txtpath) {
           axis.text.x=element_text(color="black", vjust=5))
   
   # put it all together
-  png(out_imgpath, width=6.5, height=2.5, units="in", res=600)
+  png(out_imgpath, width=9, height=3, units="in", res=600)
   grid.arrange(citation_plot, citation_table, nrow=1)
   dev.off()
 

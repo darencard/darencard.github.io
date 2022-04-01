@@ -1,7 +1,7 @@
 Metric	Google.Scholar	CrossRef
-Publication Count	41	40
-Total Citations	1482	1105
-Mean	36.1	27.6
-Median	26	22
-i10 Index	34	29
-H Index	24	21
+Publication Count	42	40
+Total Citations	1588	1181
+Mean	37.8	29.5
+Median	28	22.5
+i10 Index	34	30
+H Index	25	21

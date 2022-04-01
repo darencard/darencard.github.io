@@ -10,16 +10,19 @@ require(gridExtra)
 require(grid)
 require(cowplot)
 
+# inspired by https://twitter.com/alperezqui/status/1365042068435918855
+# see also: https://github.com/alperezq/FancyPubFigures
+
 get_scholar_profile <- function(google_scholar_id) {
   citations <- get_publications(google_scholar_id, pagesize=500)
-  
+
   pub_count <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% nrow()
   total_cites <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% pull(cites) %>% sum()
   i10_index <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% filter(cites >= 10) %>% nrow()
   h_index <- tail(which(citations$cites >= seq_along(citations$cites)), 1)
   mean <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% pull(cites) %>% mean(na.rm=TRUE) %>% round(digits=1)
   median <- citations %>% filter(pubid!="X5YyAB84Iw4C") %>% pull(cites) %>% median(na.rm=TRUE)
-  
+
   profile <- list(
     "pub_count"=pub_count,
     "total_cites"=total_cites,
@@ -28,7 +31,7 @@ get_scholar_profile <- function(google_scholar_id) {
     "mean"=mean,
     "median"=median
   )
-  
+
   return(profile)
 }
 
@@ -39,14 +42,14 @@ get_crossref_profile <- function(doi_tbl) {
     cite_num <- cr_citation_count(doi)$count
     cite_vec <- c(cite_vec, cite_num)
   }
-  
+
   doi_tbl$Cites <- cite_vec
-  
+
   citations <- doi_tbl[order(doi_tbl$Cites,decreasing=TRUE),]
   # citations <- cbind(id=rownames(citations),citations)
   # citations$id<- as.character(citations$id)
   # citations$id<- as.numeric(citations$id)
-  
+
   pub_count <- nrow(citations)
   total_cites <- sum(citations$Cites)
   i10_index <- citations %>% filter(Cites >= 10) %>% nrow()
@@ -54,7 +57,7 @@ get_crossref_profile <- function(doi_tbl) {
   mean <- round(mean(citations$Cites, na.rm=TRUE), digits=1)
   median <- median(citations$Cites, na.rm=TRUE)
   # max(which(citations$id<=citations$Cites))
-  
+
   profile <- list(
     "pub_count"=pub_count,
     "total_cites"=total_cites,
@@ -63,7 +66,7 @@ get_crossref_profile <- function(doi_tbl) {
     "mean"=mean,
     "median"=median
   )
-  
+
   return(profile)
 }
 
@@ -99,13 +102,13 @@ citation_summary_table <- data.frame(
                crossref_profile$median,
                crossref_profile$i10_index,
                crossref_profile$h_index),
-  row.names=c("Publication Count", "Total Citations", "Mean", "Median", "i10 Index", 
+  row.names=c("Publication Count", "Total Citations", "Mean", "Median", "i10 Index",
               "H Index")
 )
 
 citation_table <- tableGrob(citation_summary_table,
                             cols=c("Google Scholar", "CrossRef"),
-                            theme=ttheme_minimal(base_size=10), 
+                            theme=ttheme_minimal(base_size=10),
                             labs(title="test"))
 
 # citation_table <- citation_summary_table %>%
@@ -120,7 +123,7 @@ roundUpNice <- function(x, nice=c(1,2,4,5,6,8,10)) {
 }
 
 cite_history <- bind_rows(data.frame(year=2013, cites=0),
-                          get_citation_history(google_scholar_id)) 
+                          get_citation_history(google_scholar_id))
 
 extract_first_author <- function(col) {
   gsub(",.*", "", col)
@@ -144,9 +147,9 @@ upper <- roundUpNice(max(cite_history$cites))
 citation_plot <- cite_history %>%
   mutate(year=factor(year)) %>%
   # filter(year >= 2015) %>%
-  ggplot(aes(x=year, y=cites)) + 
+  ggplot(aes(x=year, y=cites)) +
     geom_col(aes(fill=cites),  width=0.5) +
-    geom_text(aes(label=cites), 
+    geom_text(aes(label=cites),
               position=position_dodge(width=0.9), vjust=-0.5,
               size=4) +
     scale_y_continuous(limits=c(0, max(cite_history$cites)+50)) +
@@ -155,7 +158,7 @@ citation_plot <- cite_history %>%
          x="Year", y="Citations") +
     theme_minimal(base_size=16) +
     theme(panel.grid=element_blank(), axis.text.y=element_blank(),
-          axis.title=element_blank(), 
+          axis.title=element_blank(),
           axis.text.x=element_text(color="black", vjust=3),
           legend.position="none")
 
@@ -167,11 +170,11 @@ publish_plot <- publications %>%
     geom_jitter(aes(shape=first, size=first), width=FALSE) +
     scale_color_viridis_d(direction=-1) +
     scale_size_discrete(range=c(3, 4)) +
-    labs(title="Publication Timeline (colored by journal)", 
+    labs(title="Publication Timeline (colored by journal)",
          x="Year", y="Citations") +
     theme_minimal(base_size=16) +
     theme(panel.grid=element_blank(), axis.text.y=element_blank(),
-          axis.title=element_blank(), 
+          axis.title=element_blank(),
           axis.text.x=element_text(color="black", vjust=3),
           legend.position="none")
 
@@ -188,7 +191,7 @@ bottom <- plot_grid(wordcloud, citation_table, nrow=1)
 plot_grid(top, bottom, nrow=2, rel_heights=c(1, 0.5))
 
 # write out a citation summary text file
-write.table(citation_summary_table %>% rownames_to_column("metric"), 
+write.table(citation_summary_table %>% rownames_to_column("metric"),
             "~/Downloads/test_cites.txt", quote=FALSE,
             sep="\t", row.names=FALSE)
 
@@ -215,11 +218,11 @@ toSpace <- content_transformer(function (x , pattern ) gsub(pattern, " ", x))
 docs <- tm_map(docs, content_transformer(tolower))
 docs <- tm_map(docs, removeNumbers)
 docs <- tm_map(docs, removeWords, stopwords("english"))
-docs <- tm_map(docs, removeWords, c("across", 
-                                    "also", 
+docs <- tm_map(docs, removeWords, c("across",
+                                    "also",
                                     "multiple",
                                     "within",
-                                    "may", 
+                                    "may",
                                     "provide",
                                     "using",
                                     "can",
@@ -242,5 +245,3 @@ wordcloud <- d %>%
     # scale_size_area(max_size = 5) +
     scale_color_viridis_d(direction=-1) +
     theme_minimal()
-
-

@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "Repeat Annotation using RepeatModeler and RepeatMasker"
-date: 2012-06-09
+date: 2022-07-09
 excerpt: "Thorough guide for annotating and masking repeats using RepeatModeler/RepeatMasker."
 ---
 
@@ -245,7 +245,7 @@ awk -v OFS="\t" -v genomeLen="${allLen}" '{ print $0, $4 / genomeLen }' > 05_ful
 
 These proportions are based on the full genome length but one could easily calculate them based on the number of non-N bases in the genome instead by swapping in the following command: `awk -v OFS="\t" -v genomeLen="${allLen}" -v nLen="${nLen}" '{ print $0, $4 / (genomeLen - nLen) }'`.
 
-By summing across the families or subfamilies of repeats in different ways, using, for example, `datamash` in the Unix shell or the tidyverse in R, one can easily summarize repeat composition in a way that is more transparent than what is going on in RepeatMasker/ProcessRepeats (which has never been detailed or published). For example, I explicitly filter away the small number of repeat records that have a `?` in the repeat family annotation (see the `grep` command), as it is not clear what this means and if/how it is different from a record without the mark.
+By summing across the families or subfamilies of repeats in different ways, using, for example, `datamash` in the Unix shell or the [tidyverse](https://www.tidyverse.org/) in R, one can easily summarize repeat composition in a way that is more transparent than what is going on in RepeatMasker/ProcessRepeats (which has never been detailed or published). For example, I explicitly filter away the small number of repeat records that have a `?` in the repeat family annotation (see the `grep` command), as it is not clear what this means and if/how it is different from a record without the mark.
 
 We should also create GFF files of our repeat annotations, since GFF has become a standard for genome annotation information. RepeatMasker has a distributed script called `rmOutToGFF3.pl` that will convert the combined `.out` file to GFF version 3. I did not like how this script names repeats in the 9th column of the GFF, so I created my [own script](https://github.com/darencard/GenomeAnnotation/blob/master/rmOutToGFF3custom) that produces the same file in a similar way, but with improved (in my opinion) annotation information in the 9th column. Use whichever you would prefer, but I will demo mine below.
 

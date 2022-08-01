@@ -370,7 +370,7 @@ eval $cmd;
 done
 ```
 
-This script took several hours to run for me. There are probably much more efficient ways of doing this and someone with some real skills could speed this up significantly, but it is good enough for me for the rare occassions where I might need to perform this task. After finishing, we now see 575 sets of output files from each iteration. The `.txt` file keeps track of the pairwise species/tips with the smallest evolutionary/phylogenetic distance in a given iteration and the `.tree` file is the resulting phylogeny from this iteration with one of the species/tips purged.
+This script took 6-7 hours to run for me. There are probably much more efficient ways of doing this and someone with some real skills could speed this up significantly, but it is good enough for me for the rare occassions where I might need to perform this task. After finishing, we now see 575 sets of output files from each iteration. The `.txt` file keeps track of the pairwise species/tips with the smallest evolutionary/phylogenetic distance in a given iteration and the `.tree` file is the resulting phylogeny from this iteration with one of the species/tips purged.
 
 And that's it! Each iteration results in a phylogeny with one less tip than the iteration before where the tip that is purged is one of those that has the smallest pairwise evolutionary/phylogenetic distance. So by the 575th iteration, we are down to 30, which we can confirm.
 

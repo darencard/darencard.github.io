@@ -6,7 +6,7 @@ excerpt: "A guide for installing popular repeat annotation software."
 ---
 
 ## Introduction
-RepeatModeler and RepeatMasker are sister software packages for *de novo* identification of repeats in genomes and annotation / masking of repeats based on an existing library, respectively. These programs have been widely used for over a decade and are vital tools for genome annotation, though newer repeat pipelines are also emerging. Despite the popularity of these programs, they can often be difficult to use primarily because of the installation overhead. Because installation is a bottleneck and I often receive request for guidance in installing RepeatModeler / RepeatMasker, I decided to make a tutorial on installing both pieces of software. I have been using both for about 10 years and in thattime, the installation process has only changed in minor ways, so I'm confident this guide will be helpful well into the future, though there may be some subtle differences with future versions of the software.
+[RepeatModeler](https://www.repeatmasker.org/RepeatModeler/) and [RepeatMasker](https://www.repeatmasker.org/RepeatMasker/) are sister software packages for *de novo* identification of repeats in genomes and annotation / masking of repeats based on an existing library, respectively. These programs have been widely used for over a decade and are vital tools for genome annotation, though newer repeat pipelines are also emerging. Despite the popularity of these programs, they can often be difficult to use primarily because of the installation overhead. Because installation is a bottleneck and I often receive request for guidance in installing RepeatModeler / RepeatMasker, I decided to make a tutorial on installing both pieces of software. I have been using both for about 10 years and in thattime, the installation process has only changed in minor ways, so I'm confident this guide will be helpful well into the future, though there may be some subtle differences with future versions of the software.
 
 ## Software Information
 Part of what makes RepeatModeler and RepeatMasker so hard to install is the dependencies. Here is a full list of the software that will be installed, the version information, and software sources. Keep in mind that software changes over time and some aspects of this tutorial may shift with future updates.
@@ -20,7 +20,7 @@ I will be installing all prerequisites and both RepeatMasker and RepeatModeler. 
 4. [RECON](http://eddylab.org/software/recon/) - version 1.08
 5. RepeatScout (no software website) - version 1.0.6
 6. [RMBlast](http://www.repeatmasker.org/RMBlast.html) - version 2.11.0
-7. [genometools](http://genometools.org/pub/) - version 1.6.2 (required for `ltrharvest` for running new RepeatModeler2 LTR structural search pipeline)
+7. [GenomeTools](http://genometools.org/pub/) - version 1.6.2 (required for `ltrharvest` for running new RepeatModeler2 LTR structural search pipeline)
 8. [LTR_retriever](https://github.com/oushujun/LTR_retriever) - version 2.9.0 (required for running new RepeatModeler2 LTR structural search pipeline)
 9. [MAFFT](https://mafft.cbrc.jp/alignment/software/) - version 7.505 (required for running new RepeatModeler2 LTR structural search pipeline)
 10. [CD-HIT](http://cd-hit.org/) - version 4.8.1 (required for running new RepeatModeler2 LTR structural search pipeline)
@@ -114,7 +114,7 @@ tar xvf rmblast-2.11.0+-x64-linux.tar.gz
 cd $HOME/repeat-annotation
 ```
 
-#### genometools (ltrharvest)
+#### GenomeTools (ltrharvest)
 
 ```bash
 # download source code of genometools
@@ -204,6 +204,8 @@ cd $HOME/repeat-annotation
 #### RepeatMasker
 
 ```bash
+# ensure we are in correct location
+cd $HOME/repeat-annotation
 # download source code of RepeatMasker
 wget https://www.repeatmasker.org/RepeatMasker/RepeatMasker-4.1.3-p1.tar.gz
 # extract file contents
@@ -225,6 +227,7 @@ I will not describe how to retrieve Repbase since it is behind a paywall and man
 # move RepBaseRepeatMaskerEdition-20181026.tar.gz to the extracted RepeatMasker directory
 mv /path/to/RepBaseRepeatMaskerEdition-20181026.tar.gz RepeatMasker/
 # navigate to source code
+cd RepeatMasker
 # extract file contents to overwrite existing release distributed with RepeatMasker
 tar xvf RepBaseRepeatMaskerEdition-20181026.tar.gz
 ```
@@ -346,3 +349,170 @@ To have this done automatically when you login, you will need to add this line t
 Great! Now that RepeatMasker is installed, we can try RepeatModeler!
 
 #### RepeatModeler
+
+```bash
+# ensure we are in correct location
+cd $HOME/repeat-annotation
+# download source code of RepeatModeler
+wget https://www.repeatmasker.org/RepeatModeler/RepeatModeler-2.0.3.tar.gz
+# extract file contents
+tar xvf RepeatModeler-2.0.3.tar.gz
+# navigate to source code
+cd RepeatModeler-2.0.3
+```
+
+All prerequisite software has been installed and the repeat libraries are properly configured through RepeatMasker, so we can proceed directly with installing RepeatModeler.
+
+```bash
+# should be located in $HOME/repeat-annotation/RepeatModeler-2.0.3/
+perl ./configure
+```
+
+We are first met with a generic introductory prompt, where we can press `<Enter>` to proceed.
+
+```
+RepeatModeler Configuration Program
+
+This program assists with the configuration of the
+RepeatModeler program.  The next set of screens will ask
+you to enter information pertaining to your system
+configuration.  At the end of the program your RepeatModeler
+installation will be ready to use.
+
+
+
+<PRESS ENTER TO CONTINUE>
+```
+
+Next, the installer prompts for the installation location for Perl. In my experience, this does a pretty good job of automatically identifying whatever version of Perl is installed, so I almost always go with the suggested path by hitting `<Enter>`. Just ensure the Perl version is appropriate based on the prerequisites above.
+
+```
+**PERL INSTALLATION PATH**
+
+  This is the full path to the Perl interpreter.
+  ie. /usr/local/bin/perl
+
+Enter path [ /n/sw/helmod/apps/centos7/Core/perl/5.26.1-fasrc01/bin/perl ]: <Enter>
+```
+
+Now we are prompted to direct the installer to the installation location for RepeatMasker, which we just installed. It may find this installation automatically like it did for me, but you can always enter the path (replacing `/n/home13/dcard` with your `$HOME`: `/n/home13/dcard/repeat-annotation/RepeatMasker`.
+
+```
+The path to the installation of RepeatMasker.
+REPEATMASKER_DIR [/n/home13/dcard/repeat-annotation/RepeatMasker]:
+```
+
+Next, we must enter the path to our installation of RECON, as below.
+
+```
+The path to the installation of the RECON de-novo repeatfinding program.
+RECON_DIR: /n/home13/dcard/repeat-annotation/RECON-1.08/bin
+```
+
+And the same with RepeatScout, as below.
+
+```
+The path to the installation of the RepeatScout ( 1.0.6 or higher ) de-novo repeatfinding program.
+RSCOUT_DIR: /n/home13/dcard/repeat-annotation/RepeatScout-1.0.6
+```
+
+And with TRF. However, instead of the full path to the software like we provided to RepeatMasker, we only provide the path to where `trf` is installed.
+
+```
+The full path to TRF program.  TRF must be named \"trf\". ( 4.0.9 or higher )
+TRF_DIR: /n/home13/dcard/repeat-annotation
+```
+
+And with CD-HIT.
+
+```
+The path to the installation of the CD-Hit sequence clustering package.
+CDHIT_DIR: /n/home13/dcard/repeat-annotation/cd-hit-v4.8.1-2019-0228
+```
+
+Next the installer asks for the location of various 'TwoBit' tools from UCSC (sometimes referred to as the Kent Utilities). I do not know why these prerequesites were not mentioned anywhere in the documentation, so we will have to install these on the fly. Fortunately, this is pretty easy to do since binaries for all UCSC tools are available to download directly from `https://hgdownload.soe.ucsc.edu/admin/exe/`. I am downloading those in the directory `linux.x86_64/` but you may need to select another option. To perform the installation, I would login or open a second terminal so you do not have to interupt the RepeatModeler installation in the existing terminal.
+
+```bash
+# navigate to correct location
+cd $HOME/repeat-annotation
+# download the tools with "twobit" in their name
+wget https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/faToTwoBit
+wget https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/twoBitDup
+wget https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/twoBitInfo
+wget https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/twoBitMask
+wget https://hgdownload.soe.ucsc.edu/admin/exe/linux.x86_64/twoBitToFa
+# make these tools executable
+chmod +x faToTwoBit twoBitDup twoBitInfo twoBitMask twoBitToFa
+# you can test these work as follows - you should see the help information for each tool
+./faToTwoBit -h
+```
+
+Now, back in our other terminal with the RepeatModeler installer, we can provide the path to these tools.
+
+```
+The path to the installation directory of the UCSC TwoBit Tools (twoBitToFa, faToTwoBit, twoBitInfo etc).
+UCSCTOOLS_DIR: /n/home13/dcard/repeat-annotation
+```
+
+Next, we can add our search engine, which will be RMBlast again.
+
+```
+Add a Search Engine:
+   1. RMBlast - NCBI Blast with RepeatMasker extensions: [ Un-configured ]
+   2. WUBlast/ABBlast: [ Un-configured ]
+
+   3. Done
+
+
+Enter Selection: 1
+```
+
+And enter the correct path.
+
+```
+The path to the installation of the RMBLAST sequence alignment program.
+RMBLAST_DIR: /n/home13/dcard/repeat-annotation/rmblast-2.11.0/bin
+```
+
+Assuming that works properly, we can move on.
+
+```
+Add a Search Engine:
+   1. RMBlast - NCBI Blast with RepeatMasker extensions: [ Configured ]
+   2. WUBlast/ABBlast: [ Un-configured ]
+
+   3. Done
+
+
+Enter Selection: 3
+```
+
+Now we are prompted for the prerequisite software necessary to use the LTR Structure Identification Pipeline.
+
+```
+LTR Structural Identication Pipeline [optional]
+
+In addition to RECON/RepeatScout this version of RepeatModeler
+has the option of running an additional analysis to identify
+structural features of LTR sequences.
+
+Do you wish to configure RepeatModeler for this type
+of analysis [y] or n?: y
+```
+
+We begin with the path to GenomeTools.
+
+```
+The path to the installation of the GenomeTools package.
+GENOMETOOLS_DIR: /n/home13/dcard/repeat-annotation/genometools-1.6.2/bin
+```
+
+And then to LTR_retriever.
+
+```
+The path to the installation of the LTR_Retriever (v2.9.0 and higher) structural LTR analysis package.
+LTR_RETRIEVER_DIR: /n/home13/dcard/repeat-annotation/LTR_retriever-2.9.0
+```
+
+MAFFT - need to make binaries executable!!!
+Continue later from beginning and ensure this works properly!

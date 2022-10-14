@@ -32,8 +32,8 @@ I will be installing all prerequisites and both RepeatMasker and RepeatModeler. 
 2. [RepeatModeler](https://www.repeatmasker.org/RepeatModeler/) - version 2.0.3
 
 ### Databases
-1. Dfam - release 3.6
-2. Repbase - release 20181026. Note: This was the final release of Repbase before GIRI, unfortunately, put this resource behind a paywall. For those who already have this release, you should be able to install the software with Repbase. If you have a lucky person with individual or institutional subscriptions, you may have access to updated Repbase releases and can use those instead. I will describe installing release 20181026 but the process should be the same for other releases. You can always proceed without Repbase and only use Dfam if access is an issue.
+1. [Dfam](https://dfam.org/home) - release 3.6
+2. [Repbase](https://www.girinst.org/repbase/) - release 20181026. Note: This was the final release of Repbase before GIRI, unfortunately, put this resource behind a paywall. For those who already have this release, you should be able to install the software with Repbase. If you have a lucky person with individual or institutional subscriptions, you may have access to updated Repbase releases and can use those instead. I will describe installing release 20181026 but the process should be the same for other releases. You can always proceed without Repbase and only use Dfam if access is an issue.
 
 ## Installation
 

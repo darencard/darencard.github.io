@@ -153,13 +153,15 @@ tar xvf mafft-7.490-with-extensions-src.tgz
 cd mafft-7.490-with-extensions
 # compile core and extension code
 cd core
+# first you must modify 'Makefile' and change the first line from 'PREFIX = /usr/local' to 'PREFIX = /n/home13/dcard/repeat-annotation/mafft-7.490-with-extensions' (modify accordingly)
 make clean
 make
 cd ..
 cd extensions
+# first you must modify 'Makefile' and change the first line from 'PREFIX = /usr/local' to 'PREFIX = /n/home13/dcard/repeat-annotation/mafft-7.490-with-extensions' (modify accordingly)
 make clean
 make
-# compiled software is now available in mafft-7.490-with-extensions/binaries
+# compiled software is now available in mafft-7.490-with-extensions/bin
 # move back to parent directory
 cd $HOME/repeat-annotation
 ```
@@ -332,7 +334,7 @@ Further documentation on the program may be found here:
   /n/home13/dcard/repeat-annotation/RepeatMasker/repeatmasker.help
 ```
 
-Now you should be able to execute `RepeatMasker -h` from ` ` and see the help page, which verifies the installation is complete. Unfortunately for me, a required Perl module was not initially available and so I was getting the following error.
+Now you should be able to execute `./RepeatMasker -h` from ` ` and see the help page, which verifies the installation is complete. Unfortunately for me, a required Perl module was not initially available and so I was getting the following error.
 
 ```
 Can't locate EMBL.pm in @INC (you may need to install the EMBL module) (@INC contains: ...
@@ -430,7 +432,7 @@ The path to the installation of the CD-Hit sequence clustering package.
 CDHIT_DIR: /n/home13/dcard/repeat-annotation/cd-hit-v4.8.1-2019-0228
 ```
 
-Next the installer asks for the location of various 'TwoBit' tools from UCSC (sometimes referred to as the Kent Utilities). I do not know why these prerequesites were not mentioned anywhere in the documentation, so we will have to install these on the fly. Fortunately, this is pretty easy to do since binaries for all UCSC tools are available to download directly from `https://hgdownload.soe.ucsc.edu/admin/exe/`. I am downloading those in the directory `linux.x86_64/` but you may need to select another option. To perform the installation, I would login or open a second terminal so you do not have to interupt the RepeatModeler installation in the existing terminal.
+Next the installer asks for the location of various 'TwoBit' tools from UCSC (sometimes referred to as the Kent Utilities). I do not know why these prerequesites were not mentioned anywhere in the documentation, so we will have to install these on the fly. Part of the joy of installing software! Fortunately, this is pretty easy to do since binaries for all UCSC tools are available to download directly from `https://hgdownload.soe.ucsc.edu/admin/exe/`. I am downloading those in the directory `linux.x86_64/` but you may need to select another option. To perform the installation, I would login or open a second terminal so you do not have to interupt the RepeatModeler installation in the existing terminal.
 
 ```bash
 # navigate to correct location
@@ -514,5 +516,34 @@ The path to the installation of the LTR_Retriever (v2.9.0 and higher) structural
 LTR_RETRIEVER_DIR: /n/home13/dcard/repeat-annotation/LTR_retriever-2.9.0
 ```
 
-MAFFT - need to make binaries executable!!!
-Continue later from beginning and ensure this works properly!
+And then to MAFFT.
+
+```
+The path to the installation of the MAFFT multiple alignment program.
+MAFFT_DIR: /n/home13/dcard/repeat-annotation/mafft-7.490-with-extensions/bin
+```
+
+And, finally, Ninja.
+
+```
+The path to the installation of the Ninja phylogenetic analysis package.
+NINJA_DIR: /n/home13/dcard/repeat-annotation/NINJA-0.95-cluster_only/NINJA
+```
+
+If all went well, the installation should finish with the following.
+
+```
+ -- Setting perl interpreter and version...
+
+Congratulations!  RepeatModeler is now ready to use.
+```
+
+You can test that your installation works with the following command. You should see the RepeatModeler help information if all is well!
+
+```bash
+./RepeatModeler -h
+```
+
+And that's it! Now both RepeatMasker and RepeatModeler, along with necessary software dependencies and repeat libraries, should be installed properly and available to use. If you need any guidance for running RepeatModeler or RepeatMasker, you can visit some of my other [blog tutorials](https://darencard.net/blog/2022-07-09-genome-repeat-annotation/).
+
+I also recommend adding the directories with software to your `$PATH` so that the software is accessible from anywhere. Otherwise, you must use the full path to each program when you want to run it. There is lots of guidance online for doing this. Both RepeatMasker and RepeatModeler also have a subdirectory `util` with useful support scripts/programs that you can also add to your `$PATH`.

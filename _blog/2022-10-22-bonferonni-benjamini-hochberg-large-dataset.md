@@ -17,7 +17,7 @@ Dependencies: Following these procedures should not require any software install
 
 I found [a great overview](https://stats.libretexts.org/Bookshelves/Applied_Statistics/Book%3A_Biological_Statistics_(McDonald)/06%3A_Multiple_Tests/6.01%3A_Multiple_Comparisons) of both the Bonferonni and Benjamini-Hochberg procedures, and controlling for false positives overall, in a section of the free, online textbook [*Biological Statistics*](https://stats.libretexts.org/Bookshelves/Applied_Statistics/Book%3A_Biological_Statistics_(McDonald)) by [John H. McDonald (University of Deleware)](https://udel.edu/~mcdonald/).
 
-In reading through the background information, I found that one does not need to strictly "correct" p-values. Rather, one can perform a procedures that will identify statistically significant tests based on the raw p-values. Moreover, the operations performed in these procedures are relatively straightforward, which makes Unix a great candidate for performing this task on a dataset that is too large for R.
+In reading through the background information, I found that one does not need to strictly "correct" p-values. Rather, one can perform a procedure that will identify statistically significant tests based on the raw p-values. Moreover, the operations performed in these procedures are relatively straightforward, which makes Unix a great candidate for performing this task on a dataset that is too large for R.
 
 ## Preparing the Dataset
 
@@ -87,7 +87,7 @@ Now let's turn to the Benjamini-Hochberg (BH) procedure, which is more complex t
 Again, if you need more information and a simple example with a far smaller dataset, visit the 
 Information above.
 
-We can use this procedure in our giant dataset by applying the following code. We are tabulating the total number of tests (i.e., sites) in the original file, sorting the raw p-values using 4 cores (`--parallel=4`) and the current wording directory for temporary files (`-T $(pwd)`), calculating the ranks and BH critical values for each test (i.e., site), and identifying all sites where the raw p-value is below the BH critical value.
+We can use this procedure in our giant dataset by applying the following code. We are tabulating the total number of tests (i.e., sites) in the original file, sorting the raw p-values using 4 cores (`--parallel=4`) and the current working directory for temporary files (`-T $(pwd)`), calculating the ranks and BH critical values for each test (i.e., site), and identifying all sites where the raw p-value is below the BH critical value.
 
 ```bash
 # this will take a while to run!

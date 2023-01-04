@@ -166,6 +166,8 @@ make
 cd $HOME/repeat-annotation
 ```
 
+Note: It was pointed out to me after publishing this tutorial that I did not technically finish the MAFFT installation, which is true. Ideally, one would install the executables into a desired installation directory. If you have complete control of your computational system (i.e., it is not shared), a simple `make install` (potentially with `sudo` as a prefix) should complete the installation. If you are on a shared system of HPC, this will not work because it aims to install in prohibited root directories, so you will have to follow the [instructions for installing into a non-default location](https://mafft.cbrc.jp/alignment/software/installation_without_root.html). My incomplete installation accomplishing a similar objective, but not as well. Note, you will need to adjust the installation directory below accordingly.
+
 #### CD-HIT
 
 ```bash
@@ -334,7 +336,7 @@ Further documentation on the program may be found here:
   /n/home13/dcard/repeat-annotation/RepeatMasker/repeatmasker.help
 ```
 
-Now you should be able to execute `./RepeatMasker -h` from ` ` and see the help page, which verifies the installation is complete. Unfortunately for me, a required Perl module was not initially available and so I was getting the following error.
+Now you should be able to execute `./RepeatMasker -h` and see the help page, which verifies the installation is complete. Unfortunately for me, a required Perl module was not initially available and so I was getting the following error.
 
 ```
 Can't locate EMBL.pm in @INC (you may need to install the EMBL module) (@INC contains: ...
@@ -522,6 +524,8 @@ And then to MAFFT.
 The path to the installation of the MAFFT multiple alignment program.
 MAFFT_DIR: /n/home13/dcard/repeat-annotation/mafft-7.490-with-extensions/bin
 ```
+
+Note: If you completed the MAFFT installation to a non-default location (see above note), you may need to supply a different location.
 
 And, finally, Ninja.
 

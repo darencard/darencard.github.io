@@ -239,7 +239,7 @@ nLen=`seqtk comp reference-genome.fasta | datamash sum 9`;
 # tabulate repeats per subfamily with total bp and proportion of genome masked
 cat 05_full_out/reference-genome.full_mask.out | tail -n +4 | awk -v OFS="\t" '{ print $6, $7, $11 }' | 
 awk -F '[\t/]' -v OFS="\t" '{ if (NF == 3) print $3, "NA", $2 - $1 +1; else print $3, $4, $2 - $1 +1 }' | 
-datamash -sg 1,2,3 sum 4 | grep -v "\?" | 
+datamash -sg 1,2 sum 3 | grep -v "\?" | 
 awk -v OFS="\t" -v genomeLen="${allLen}" '{ print $0, $4 / genomeLen }' > 05_full_out/reference-genome.full_mask.tabulate
 ```
 

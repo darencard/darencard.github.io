@@ -79,7 +79,7 @@ With this in mind, my approach is iterative and uses one library of "known" elem
 # and known elements (-k) from the same reference genome; append newly identified elements to the existing known 
 # element library (-a) and write results to an output directory (-o)
 repclassifier -t 3 -d Tetrapoda -u reference-genome-families.prefix.fa.unknown \
--k reference-genome-families.prefix.fa.known -a reference-genome-families.prefix.fa.unknown \
+-k reference-genome-families.prefix.fa.known -a reference-genome-families.prefix.fa.known \
 -o round-1_RepbaseTetrapoda-Self
 ```
 

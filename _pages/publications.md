@@ -14,6 +14,18 @@ header:
 
 ![Citation Summary](/assets/images/publications/citation_summary.png)
 
+## 2023
+
+**Card, Daren C.**, W. Bryan Jennings, and Scott V. Edwards. [Genome evolution and the future of phylogenomics of non-avian reptiles](https://doi.org/10.3390/ani13030471). *Animals* 13(3): 471. [<i class="ai ai-doi"></i>https://doi.org/10.3390/ani13030471](https://doi.org/10.3390/ani13030471). [<i class="fas fa-file-pdf"></i>]()
+
+## 2022
+
+**Card, Daren C.**, Andrew G. Van Camp, Trenten Santonastaso, Michael I. Jensen-Seaman, Nicola M. Anthony, and Scott V. Edwards. [Structure and evolution of the squamate major histocompatibility complex as revealed by two Anolis lizard genomes](https://doi.org/10.3389/fgene.2022.979746). *Frontiers in Genetics* 13: 979746. [<i class="ai ai-doi"></i>https://doi.org/10.3389/fgene.2022.979746](https://doi.org/10.3389/fgene.2022.979746). [<i class="fas fa-file-pdf"></i>]()
+
+Schield, Drew R., Blair W. Perry, **Daren C. Card**, Giulia I.M. Pasquesi, Aundrea K. Westfall, Stephen P. Mackessy, and Todd A. Castoe. [The rattlesnake W chromosome: A GC-rich retroelement refugium with retained gene function across ancient evolutionary strata](https://doi.org/10.1093/gbe/evac116). *Genome Biology & Evolution* 14(9): evac116. [<i class="ai ai-doi"></i>https://doi.org/10.1093/gbe/evac116](https://doi.org/10.1093/gbe/evac116). [<i class="fas fa-file-pdf"></i>]()
+
+Koochekian, Nazila, Alfredo Ascanio, Keaka Farleigh, **Daren C. Card**, Drew R. Schield, Todd A. Castoe, and Tereza Jezkova. [A chromosome-level genome assembly and annotation of the Desert Horned Lizard, *Phrynosoma platyrhinos*, provides insight into chromosomal rearrangements among reptiles](https://doi.org/10.1093/gigascience/giab098). *GigaScience* 11: giab098. [<i class="ai ai-doi"></i>https://doi.org/10.1093/gigascience/giab098](https://doi.org/10.1093/gigascience/giab098). [<i class="fas fa-file-pdf"></i>]()
+
 ## 2021
 
 **Card, Daren C.**, Freek J. Vonk, Sterrin Smalbrugge, Nicholas R. Casewell, Wolfgang Wüster, Todd A. Castoe, Gordon W. Schuett, and Warren Booth. [Genome-Wide Data Implicate Terminal Fusion Automixis in King Cobra Facultative Parthenogenesis](https://doi.org/10.1038/s41598-021-86373-1). *Scientific Reports* 11 (1): 7271. [<i class="ai ai-doi"></i>https://doi.org/10.1038/s41598-021-86373-1](https://doi.org/10.1038/s41598-021-86373-1). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/CardDC_2021_Genome-wide_data_implicate_terminal_fusion_automixis_in_king_cobra_facultative.pdf)
@@ -116,4 +128,4 @@ Castoe, Todd A., A. P. Jason de Koning, Kathryn T. Hall, **Daren C. Card**, Drew
 
 
 
-Last Updated: 2022-04-01
+Last Updated: 2023-06-02

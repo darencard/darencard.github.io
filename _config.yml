@@ -90,9 +90,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : "UA-149361611-1"
+    measurement_id       : "G-1WGGD8EC6K"
 
 
 # Site Author

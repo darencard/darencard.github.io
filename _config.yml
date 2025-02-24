@@ -99,9 +99,9 @@ analytics:
 author:
   name             : ""
   avatar           : "/assets/images/home/Daren_Card_2018_cropped.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "NSF Postdoctoral Fellow researching evolutionary genomics in reptiles"
-  location         : "Harvard University"
-  email            : "dcard@fas.harvard.edu"
+  bio              : "Computational biologist illuminating the biology and evolution of chromatin structure and gene regulation in human cancer and organism development"
+  location         : "Broad Institute of MIT and Harvard"
+  email            : "card@broadinstitute.org"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :

@@ -10,11 +10,17 @@ header:
 
 <!-- [2018](#2018)     [2017](#2017)     [2016](#2016)     [2015](#2015)     [2014](#2014)     [2013](#2013) -->
 
-## Summary
+## 2025
 
-![Citation Summary](/assets/images/publications/citation_summary.png)
+Miles, Lindsay S., Brian Verrelli, Richard Adams, **Daren C. Card**, Ondřej Balvin, Todd A. Castoe, & Warren Booth. 2025. Were bed bugs the first urban pest insect? Genome-wide patterns of bed bug demography mirror global human expansion. *Biology Letters*.
+
+## 2024
+
+Miles, Lindsay S., Richard Adams, Yannick Z. Francioli, **Daren C. Card**, Todd A. Castoe, & Warren Booth. 2024. [A chromosome-level reference genome for the common bed bug, *Cimex lectularius*, with identification of sex chromosomes](https://doi.org/10.1093/jhered/esae071). *Journal of Heredity*. [<i class="ai ai-doi"></i>https://doi.org/10.1093/jhered/esae071](https://doi.org/10.1093/jhered/esae071).
 
 ## 2023
+
+Farleigh, Keaka, Alfredo Ascanio, Mackenzie E. Farleigh, Drew R. Schield, **Daren C. Card**, Manuel Leal, Todd A. Castoe, Tereza Jezkova, & Javier A. Rodriguez-Robles. 2023. [Signals of differential introgression in the genome of natural hybrids of Caribbean anoles](https://doi.org/10.1111/mec.17170). *Molecular Ecology* 32(22): 6000-6017. [<i class="ai ai-doi"></i>https://doi.org/10.1111/mec.17170](https://doi.org/10.1111/mec.17170).
 
 **Card, Daren C.**, W. Bryan Jennings, and Scott V. Edwards. [Genome evolution and the future of phylogenomics of non-avian reptiles](https://doi.org/10.3390/ani13030471). *Animals* 13(3): 471. [<i class="ai ai-doi"></i>https://doi.org/10.3390/ani13030471](https://doi.org/10.3390/ani13030471). [<i class="fas fa-file-pdf"></i>](https://raw.githubusercontent.com/darencard/darencard.github.io/master/assets/pdfs/CardDC_2023_Genome_Evolution_and_the_Future_of_Phylogenomics_of_Non-Avian_Reptiles.pdf)
 
